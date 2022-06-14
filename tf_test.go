@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sync"
 	"testing"
 )
 
@@ -98,63 +99,75 @@ func (b Buffer) HasError() bool {
 const testdata = "testdata"
 
 func Test(t *testing.T) {
+	var wg sync.WaitGroup
 	f := String
 	for ti := range txts {
 		for wi := range widths {
-			// static
-			name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
-			basename := name
-			ta := TextArea{
-				Text:   txts[ti],
-				Format: f,
-			}
-			t.Run(name, func(t *testing.T) {
-				ta.SetWidth(widths[wi])
-				snapshot(t, name, ta)
-			})
-			// resize
-			if wi == 0 {
-				continue
-			}
-			name += fmt.Sprintf("->%04d", widths[wi-1])
-			t.Run(name, func(t *testing.T) {
-				ta.SetWidth(widths[wi-1])
-				snapshot(t, name, ta)
-			})
-			// return
-			name += fmt.Sprintf("->%04d", widths[wi])
-			t.Run(name, func(t *testing.T) {
-				ta.SetWidth(widths[wi])
-				snapshot(t, name, ta)
-			})
-			// compare
-			t.Run(name+"-compare", func(t *testing.T) {
-				compare(t, basename, name)
-			})
-			// cursor move
-			name = basename
-			mv := []func(){
-				ta.CursorMoveUp,
-				ta.CursorMoveDown,
-				ta.CursorMoveLeft,
-				ta.CursorMoveRight,
-				ta.CursorMoveHome,
-				ta.CursorMoveEnd,
-				ta.CursorPageDown,
-				ta.CursorPageUp,
-			}
-			for im := range mv {
-				name := fmt.Sprintf("%s-cursor%03d", name, im)
-				for times := 0; times < 10; times++ {
-					name := fmt.Sprintf("%s-times%02d", name, times)
-					t.Run(name , func(t *testing.T) {
-						mv[im]()
-						snapshot(t, name, ta)
-					})
+			wg.Add(1)
+			go func(ti, wi int) {
+				defer func() {
+					wg.Done()
+				}()
+				// static
+				name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
+				basename := name
+				ta := TextArea{
+					Text:   txts[ti],
+					Format: f,
 				}
-			}
+				t.Run(name, func(t *testing.T) {
+					ta.SetWidth(widths[wi])
+					snapshot(t, name, ta)
+				})
+				// resize
+				if wi == 0 {
+					return
+				}
+				name += fmt.Sprintf("->%04d", widths[wi-1])
+				t.Run(name, func(t *testing.T) {
+					ta.SetWidth(widths[wi-1])
+					snapshot(t, name, ta)
+				})
+				// return
+				name += fmt.Sprintf("->%04d", widths[wi])
+				t.Run(name, func(t *testing.T) {
+					ta.SetWidth(widths[wi])
+					snapshot(t, name, ta)
+				})
+				// compare
+				t.Run(name+"-compare", func(t *testing.T) {
+					compare(t, basename, name)
+				})
+				// cursor move
+				name = basename
+				mv := []func(){
+					ta.CursorMoveUp,
+					ta.CursorMoveDown,
+					ta.CursorMoveLeft,
+					ta.CursorMoveRight,
+					ta.CursorMoveHome,
+					ta.CursorMoveEnd,
+					ta.CursorPageDown,
+					ta.CursorPageUp,
+				}
+				size := len(txts[ti])
+				if 20 < size {
+					size = 20
+				}
+				for im := range mv {
+					name := fmt.Sprintf("%s-cursor%03d", name, im)
+					for times := 0; times < size; times++ {
+						name := fmt.Sprintf("%s-times%02d", name, times)
+						t.Run(name, func(t *testing.T) {
+							mv[im]()
+							snapshot(t, name, ta)
+						})
+					}
+				}
+			}(ti, wi)
 		}
 	}
+	wg.Wait()
 }
 
 func repeat(number int, f func()) {
