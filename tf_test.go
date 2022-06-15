@@ -236,10 +236,14 @@ func check(t *testing.T, ti, wi int, name string) {
 		{name: "CursorMoveDown", f: ta.CursorMoveDown},   // 1
 		{name: "CursorMoveLeft", f: ta.CursorMoveLeft},   // 2
 		{name: "CursorMoveRight", f: ta.CursorMoveRight}, // 3
-		// {name: "CursorMoveHome", f: ta.CursorMoveHome},   // 4
-		// {name: "CursorMoveEnd", f: ta.CursorMoveEnd},     // 5
-		// {name: "CursorPageDown", f: ta.CursorPageDown},   // 6
-		// {name: "CursorPageUp", f: ta.CursorPageUp},       // 7
+		{name: "InsertRuneA", f: func() {
+			ta.Insert('W')
+			ta.SetWidth(widths[wi])
+		}}, // 4
+		// {name: "CursorMoveHome", f: ta.CursorMoveHome},
+		// {name: "CursorMoveEnd", f: ta.CursorMoveEnd},
+		// {name: "CursorPageDown", f: ta.CursorPageDown},
+		// {name: "CursorPageUp", f: ta.CursorPageUp},
 	}
 	var ms []movement
 
@@ -256,7 +260,13 @@ func check(t *testing.T, ti, wi int, name string) {
 	// on bottom and right corner
 	ms = append(ms, repeat(10, moves[1])...)
 	ms = append(ms, repeat(10, moves[3])...)
-	//
+	// insert rune
+	ms = append(ms,
+		moves[3], moves[4],
+		moves[2], moves[4],
+		moves[1], moves[4],
+		moves[0], moves[4],
+	)
 	for i := range ms {
 		fmt.Fprintf(&buf, "Move to: %s\n", ms[i].name)
 		ms[i].f()

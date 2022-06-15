@@ -339,3 +339,67 @@ Move to: CursorMoveRight
 rows  =   2
 width =   1
 
+Move to: CursorMoveRight
+000000001|世| width:000000001
+000000002|█| width:000000001
+rows  =   2
+width =   1
+
+Move to: InsertRuneA
+000000001|世| width:000000001
+000000002|█| width:000000001
+000000003|界| width:000000001
+rows  =   3
+width =   1
+
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+000000002|W| width:000000001
+000000003|界| width:000000001
+rows  =   3
+width =   1
+
+Move to: InsertRuneA
+000000001|W| width:000000001
+000000002|█| width:000000001
+000000003|W| width:000000001
+000000004|界| width:000000001
+rows  =   4
+width =   1
+
+Move to: CursorMoveDown
+000000001|W| width:000000001
+000000002|世| width:000000001
+000000003|█| width:000000001
+000000004|界| width:000000001
+rows  =   4
+width =   1
+
+Move to: InsertRuneA
+000000001|W| width:000000001
+000000002|世| width:000000001
+000000003|W| width:000000001
+000000004|█| width:000000001
+000000005|界| width:000000001
+rows  =   5
+width =   1
+
+Move to: CursorMoveUp
+000000001|W| width:000000001
+000000002|世| width:000000001
+000000003|█| width:000000001
+000000004|W| width:000000001
+000000005|界| width:000000001
+rows  =   5
+width =   1
+
+Move to: InsertRuneA
+000000001|W| width:000000001
+000000002|世| width:000000001
+000000003|W| width:000000001
+000000004|█| width:000000001
+000000005|W| width:000000001
+000000006|界| width:000000001
+rows  =   6
+width =   1
+

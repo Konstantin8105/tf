@@ -58,7 +58,7 @@ func (t *TextField) CursorMoveUp() {
 	if t.cursor == 0 {
 		return
 	}
-	for c := t.cursor - 1;0 <= c ; c-- {
+	for c := t.cursor - 1; 0 <= c; c-- {
 		if t.render[t.cursor].row-1 == t.render[c].row &&
 			t.render[t.cursor].col == t.render[c].col {
 			t.cursor = c
@@ -148,13 +148,29 @@ func (t *TextField) CursorMoveRight() {
 // func (t *TextField) SelectAll() { // DoubleClick
 // 	fmt.Printf("HOLD")
 // }
-func (t *TextField) InsertRune() { // runes and Enter
+
+// Insert rune in text without update buffer.
+// After that function run `SetWidth` for update buffer.
+func (t *TextField) Insert(r rune) {
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
+	if len(t.Text) == 0 {
+		t.Text = []rune{r}
+		return
+	}
+	t.Text = append(t.Text[:t.cursor], append([]rune{r}, t.Text[t.cursor:]...)...)
+	t.cursor++
+}
+
+func (t *TextField) KeyBackspace() {
 	fmt.Printf("HOLD")
 }
-func (t *TextField) RemoveBackspace() {
+func (t *TextField) KeyDel() {
 	fmt.Printf("HOLD")
 }
-func (t *TextField) RemoveDel() {
+func (t *TextField) KeyEnter() {
 	fmt.Printf("HOLD")
 }
 
@@ -162,6 +178,10 @@ func (t *TextField) Render(
 	drawer func(row, col uint, r rune),
 	cursor func(row, col uint),
 ) {
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
 	for p := range t.render {
 		if t.render[p].newline {
 			continue

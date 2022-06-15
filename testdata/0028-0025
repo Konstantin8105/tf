@@ -341,3 +341,51 @@ Move to: CursorMoveRight
 rows  =   2
 width =  18
 
+Move to: CursorMoveRight
+000000001|Lorem ipsum dolor | width:000000018
+000000002|sit amet█| width:000000009
+rows  =   2
+width =  18
+
+Move to: InsertRuneA
+000000001|Lorem ipsum dolor | width:000000018
+000000002|sit amet█.| width:000000010
+rows  =   2
+width =  18
+
+Move to: CursorMoveLeft
+000000001|Lorem ipsum dolor | width:000000018
+000000002|sit ame█W.| width:000000010
+rows  =   2
+width =  18
+
+Move to: InsertRuneA
+000000001|Lorem ipsum dolor | width:000000018
+000000002|sit ameW█W.| width:000000011
+rows  =   2
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lorem ipsum dolor | width:000000018
+000000002|sit ameW█W.| width:000000011
+rows  =   2
+width =  18
+
+Move to: InsertRuneA
+000000001|Lorem ipsum dolor | width:000000018
+000000002|sit ameWW█W.| width:000000012
+rows  =   2
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lorem ips█m dolor | width:000000018
+000000002|sit ameWWtW.| width:000000012
+rows  =   2
+width =  18
+
+Move to: InsertRuneA
+000000001|Lorem ipsW█m dolor | width:000000019
+000000002|sit ameWWtW.| width:000000012
+rows  =   2
+width =  19
+

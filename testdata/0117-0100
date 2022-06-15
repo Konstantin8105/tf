@@ -1,513 +1,585 @@
 Test: Static
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Test: resize to less
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Test: resize to more
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|S█d maximus tempor condimentum.| width:000000031
+000000001|S█d maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Se█ maximus tempor condimentum.| width:000000031
+000000001|Se█ maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed█maximus tempor condimentum.| width:000000031
+000000001|Sed█maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed █aximus tempor condimentum.| width:000000031
+000000001|Sed █aximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|Sed█maximus tempor condimentum.| width:000000031
+000000001|Sed█maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|Se█ maximus tempor condimentum.| width:000000031
+000000001|Se█ maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|S█d maximus tempor condimentum.| width:000000031
+000000001|S█d maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|█| width:000000001
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|█am et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|█am WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|█| width:000000001
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|█| width:000000001
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|█am et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|█am WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|█| width:000000001
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|█ed maximus tempor condimentum.| width:000000031
+000000001|█ed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|S█d maximus tempor condimentum.| width:000000031
+000000001|S█d maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Se█ maximus tempor condimentum.| width:000000031
+000000001|Se█ maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed█maximus tempor condimentum.| width:000000031
+000000001|Sed█maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed █aximus tempor condimentum.| width:000000031
+000000001|Sed █aximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|█| width:000000001
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|█am et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|█am WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|█| width:000000001
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci,█| width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci,█| width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci█ | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci█ | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orc█, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orc█, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveLeft
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis or█i, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis or█i, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum█| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm█| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum█| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm█| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum█| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm█| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveUp
-000000001|Sed maximus tempor condimentum█| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm█| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|█| width:000000001
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|█am et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|█am WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|█| width:000000001
-000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveDown
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|█it amet fringilla nisl pharetra quis.| width:000000038
+000000005|█it amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|s█t amet fringilla nisl pharetra quis.| width:000000038
+000000005|s█t amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|si█ amet fringilla nisl pharetra quis.| width:000000038
+000000005|si█ amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit█amet fringilla nisl pharetra quis.| width:000000038
+000000005|sit█amet fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit █met fringilla nisl pharetra quis.| width:000000038
+000000005|sit █met fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit a█et fringilla nisl pharetra quis.| width:000000038
+000000005|sit a█et fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit am█t fringilla nisl pharetra quis.| width:000000038
+000000005|sit am█t fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit ame█ fringilla nisl pharetra quis.| width:000000038
+000000005|sit ame█ fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet█fringilla nisl pharetra quis.| width:000000038
+000000005|sit amet█fWWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet █ringilla nisl pharetra quis.| width:000000038
+000000005|sit amet █WWWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condimentum.| width:000000031
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
 000000002|| width:000000000
-000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
 000000004|| width:000000000
-000000005|sit amet f█ingilla nisl pharetra quis.| width:000000038
+000000005|sit amet f█WWWWringilla Wn| width:000000026
 rows  =   5
-width =  44
+width =  50
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
+000000004|| width:000000000
+000000005|sit amet fW█WWWringilla Wn| width:000000026
+rows  =   5
+width =  50
+
+Move to: InsertRuneA
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
+000000004|| width:000000000
+000000005|sit amet fWW█WWWringilla Wn| width:000000027
+rows  =   5
+width =  50
+
+Move to: CursorMoveLeft
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
+000000004|| width:000000000
+000000005|sit amet fW█WWWWringilla Wn| width:000000027
+rows  =   5
+width =  50
+
+Move to: InsertRuneA
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
+000000004|| width:000000000
+000000005|sit amet fWW█WWWWringilla Wn| width:000000028
+rows  =   5
+width =  50
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
+000000004|| width:000000000
+000000005|sit amet fWW█WWWWringilla Wn| width:000000028
+rows  =   5
+width =  50
+
+Move to: InsertRuneA
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci, | width:000000050
+000000004|| width:000000000
+000000005|sit amet fWWW█WWWWringilla Wn| width:000000029
+rows  =   5
+width =  50
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci,█| width:000000050
+000000004|| width:000000000
+000000005|sit amet fWWWWWWWWringilla Wn| width:000000029
+rows  =   5
+width =  50
+
+Move to: InsertRuneA
+000000001|Sed maximus tempor coWWWndimentWWuWm.| width:000000037
+000000002|| width:000000000
+000000003|Nam WWetW WWrisWus est. Cras ornare iaculis orci,W█| width:000000051
+000000004|| width:000000000
+000000005|sit amet fWWWWWWWWringilla Wn| width:000000029
+rows  =   5
+width =  51
 

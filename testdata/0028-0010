@@ -402,3 +402,64 @@ Move to: CursorMoveRight
 rows  =   3
 width =  10
 
+Move to: CursorMoveRight
+000000001|Lorem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet█| width:000000009
+rows  =   3
+width =  10
+
+Move to: InsertRuneA
+000000001|Lorem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet█.| width:000000010
+rows  =   3
+width =  10
+
+Move to: CursorMoveLeft
+000000001|Lorem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit ame█W.| width:000000010
+rows  =   3
+width =  10
+
+Move to: InsertRuneA
+000000001|Lorem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit ameW█W| width:000000010
+000000004|.| width:000000001
+rows  =   4
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lorem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit ameW█W| width:000000010
+000000004|.| width:000000001
+rows  =   4
+width =  10
+
+Move to: InsertRuneA
+000000001|Lorem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit ameWW█| width:000000010
+000000004|W.| width:000000002
+rows  =   4
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit ameWWt| width:000000010
+000000004|W.| width:000000002
+rows  =   4
+width =  10
+
+Move to: InsertRuneA
+000000001|Lorem ipW█| width:000000010
+000000002|um dolor | width:000000009
+000000003|sit ameWWt| width:000000010
+000000004|W.| width:000000002
+rows  =   4
+width =  10
+
