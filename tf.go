@@ -3,7 +3,6 @@ package tf
 import (
 	"fmt"
 	"math"
-	"os"
 	"unicode"
 )
 
@@ -45,7 +44,7 @@ func (t *TextField) cursorInRect() {
 }
 
 func (t *TextField) CursorPosition() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 
 func (t *TextField) CursorMoveUp() {
@@ -74,9 +73,9 @@ func (t *TextField) CursorMoveDown() {
 		return
 	}
 	for c := t.cursor + 1; c < len(t.render); c++ {
-		// 		if t.render[c].space {
-		// 			continue
-		// 		}
+		if t.render[c].newline {
+			continue
+		}
 		if t.render[t.cursor].row+1 == t.render[c].row &&
 			t.render[t.cursor].col == t.render[c].col {
 			t.cursor = c
@@ -128,28 +127,28 @@ func (t *TextField) CursorMoveRight() {
 }
 
 func (t *TextField) CursorMoveHome() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) CursorMoveEnd() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) CursorPageDown() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) CursorPageUp() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) SelectAll() { // DoubleClick
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) InsertRune() { // runes and Enter
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) RemoveBackspace() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 func (t *TextField) RemoveDel() {
-	fmt.Fprintf(os.Stdout, "HOLD")
+	fmt.Printf("HOLD")
 }
 
 func (t *TextField) Render(
