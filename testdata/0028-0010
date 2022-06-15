@@ -1,5 +1,404 @@
+Test: Static
 000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
 000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
+
+Test: resize to less
+000000001|█ore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|amet| width:000000004
+000000008|.| width:000000001
+rows  =   8
+width =   4
+
+Test: resize to more
+000000001|█orem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|L█rem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lo█em ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lor█m ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem█ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem █psu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem i█su| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveLeft
+000000001|Lorem i█su| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveLeft
+000000001|Lorem █psu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveLeft
+000000001|Lorem█ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveLeft
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem█ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem █psu| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem i█su| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ip█u| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ips█| width:000000010
+000000002|m dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ipsu| width:000000010
+000000002|█ dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ipsu| width:000000010
+000000002|m█dolor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ipsu| width:000000010
+000000002|m █olor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ipsu| width:000000010
+000000002|m d█lor | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+
+Move to: CursorMoveRight
+000000001|Lorem ipsu| width:000000010
+000000002|m do█or | width:000000008
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  10
+

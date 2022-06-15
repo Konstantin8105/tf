@@ -100,7 +100,6 @@ const testdata = "testdata"
 
 func Test(t *testing.T) {
 	var wg sync.WaitGroup
-	f := String
 	for ti := range txts {
 		for wi := range widths {
 			wg.Add(1)
@@ -108,116 +107,137 @@ func Test(t *testing.T) {
 				defer func() {
 					wg.Done()
 				}()
-				// static
 				name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
-				basename := name
-				ta := TextArea{
-					Text:   txts[ti],
-					Format: f,
-				}
 				t.Run(name, func(t *testing.T) {
-					ta.SetWidth(widths[wi])
-					snapshot(t, name, ta)
+					check(t, ti, wi, name)
 				})
-				// resize
-				if wi == 0 {
-					return
-				}
-				name += fmt.Sprintf("->%04d", widths[wi-1])
-				t.Run(name, func(t *testing.T) {
-					ta.SetWidth(widths[wi-1])
-					snapshot(t, name, ta)
-				})
-				// return
-				name += fmt.Sprintf("->%04d", widths[wi])
-				t.Run(name, func(t *testing.T) {
-					ta.SetWidth(widths[wi])
-					snapshot(t, name, ta)
-				})
-				// compare
-				t.Run(name+"-compare", func(t *testing.T) {
-					compare(t, basename, name)
-				})
-				// cursor move
-				name = basename
-				mv := []func(){
-					ta.CursorMoveUp,
-					ta.CursorMoveDown,
-					ta.CursorMoveLeft,
-					ta.CursorMoveRight,
-					ta.CursorMoveHome,
-					ta.CursorMoveEnd,
-					ta.CursorPageDown,
-					ta.CursorPageUp,
-				}
-				size := len(txts[ti])
-				if 20 < size {
-					size = 20
-				}
-				for im := range mv {
-					name := fmt.Sprintf("%s-cursor%03d", name, im)
-					for times := 0; times < size; times++ {
-						name := fmt.Sprintf("%s-times%02d", name, times)
-						t.Run(name, func(t *testing.T) {
-							mv[im]()
-							snapshot(t, name, ta)
-						})
-					}
-				}
 			}(ti, wi)
 		}
 	}
 	wg.Wait()
 }
 
-func repeat(number int, f func()) {
-	for i := 0; i < number; i++ {
-		f()
-	}
-}
-
-func snapshot(t *testing.T, name string, ta TextArea) {
-	var b Buffer
-	ta.Render(b.Drawer)
-	actual := fmt.Sprintf("%s", b)
-	if b.HasError() {
-		t.Fatalf("buffer have error rune")
-	}
-	// for update test screens run in console:
-	// UPDATE=true go test
-	filename := filepath.Join(testdata, name)
-	if os.Getenv("UPDATE") == "true" {
-		if err := ioutil.WriteFile(filename, []byte(actual), 0644); err != nil {
-			t.Fatalf("Cannot write snapshot to file: %v", err)
+func check(t *testing.T, ti, wi int, name string) {
+	// prepare variables
+	var (
+		buf bytes.Buffer
+		f   = String
+		ta  = TextArea{Text: txts[ti], Format: f}
+	)
+	// compare
+	defer func() {
+		var (
+			actual   = buf.Bytes()
+			filename = filepath.Join(testdata, name)
+		)
+		// for update test screens run in console:
+		// UPDATE=true go test
+		if os.Getenv("UPDATE") == "true" {
+			if err := ioutil.WriteFile(filename, actual, 0644); err != nil {
+				t.Fatalf("Cannot write snapshot to file: %v", err)
+			}
 		}
+		// get expect result
+		expect, err := ioutil.ReadFile(filename)
+		if err != nil {
+			t.Fatalf("Cannot read snapshot file: %v", err)
+		}
+		// compare
+		if !bytes.Equal(actual, expect) {
+			t.Errorf("Snapshots is not same:\n%s\n%s", expect, actual)
+		}
+	}()
+	// test: static
+	var s1 string
+	{
+		fmt.Fprintf(&buf, "Test: Static\n")
+		ta.SetWidth(widths[wi])
+		var b Buffer
+		ta.Render(b.Drawer)
+		if b.HasError() {
+			t.Fatalf("buffer have error rune")
+		}
+		fmt.Fprintf(&buf, "%s\n", b)
+		s1 = b.String()
 	}
-	// get expect result
-	expect, err := ioutil.ReadFile(filename)
-	if err != nil {
-		t.Fatalf("Cannot read snapshot file: %v", err)
+	// test: resize to less
+	if wi == 0 {
+		return
 	}
-	// compare
-	if !bytes.Equal([]byte(actual), expect) {
-		t.Errorf("Snapshots is not same:\n%s\n%s", expect, string(actual))
+	{
+		fmt.Fprintf(&buf, "Test: resize to less\n")
+		ta.SetWidth(widths[wi-1])
+		var b Buffer
+		ta.Render(b.Drawer)
+		if b.HasError() {
+			t.Fatalf("buffer have error rune")
+		}
+		fmt.Fprintf(&buf, "%s\n", b)
 	}
-}
+	// test: resize to more
+	var s2 string
+	{
+		fmt.Fprintf(&buf, "Test: resize to more\n")
+		ta.SetWidth(widths[wi])
+		var b Buffer
+		ta.Render(b.Drawer)
+		if b.HasError() {
+			t.Fatalf("buffer have error rune")
+		}
+		fmt.Fprintf(&buf, "%s\n", b)
+		s2 = b.String()
+	}
+	// compare resizes
+	if s1 != s2 {
+		t.Errorf("resize not valid:\n%s\n%s", s1, s2)
+	}
+	// cursor move
+	type movement struct {
+		name string
+		f    func()
+	}
+	repeat := func(number int, m movement) (ms []movement) {
+		ms = make([]movement, number)
+		for i := 0; i < number; i++ {
+			ms[i].name = m.name
+			ms[i].f = m.f
+		}
+		return
+	}
+	moves := []movement{
+		{name: "CursorMoveUp", f: ta.CursorMoveUp},       // 0
+		{name: "CursorMoveDown", f: ta.CursorMoveDown},   // 1
+		{name: "CursorMoveLeft", f: ta.CursorMoveLeft},   // 2
+		{name: "CursorMoveRight", f: ta.CursorMoveRight}, // 3
+		{name: "CursorMoveHome", f: ta.CursorMoveHome},   // 4
+		{name: "CursorMoveEnd", f: ta.CursorMoveEnd},     // 5
+		{name: "CursorPageDown", f: ta.CursorPageDown},   // 6
+		{name: "CursorPageUp", f: ta.CursorPageUp},       // 7
+	}
+	var ms []movement
 
-func compare(t *testing.T, name1, name2 string) {
-	if name1 == name2 {
-		t.Fatalf("compare test names are same")
-	}
-	filename1 := filepath.Join(testdata, name1)
-	expect1, err := ioutil.ReadFile(filename1)
-	if err != nil {
-		t.Fatalf("Cannot read snapshot file: %v", err)
-	}
-	filename2 := filepath.Join(testdata, name2)
-	expect2, err := ioutil.ReadFile(filename2)
-	if err != nil {
-		t.Fatalf("Cannot read snapshot file: %v", err)
-	}
-	// compare
-	if !bytes.Equal(expect1, expect2) {
-		t.Errorf("Comparing is not same:\n%s\n%s", expect1, expect2)
+	// right - left, down - up
+	ms = append(ms, repeat(4, moves[3])...)
+	ms = append(ms, repeat(5, moves[4])...)
+	ms = append(ms, repeat(4, moves[1])...)
+	ms = append(ms, repeat(5, moves[0])...)
+	// square
+	ms = append(ms, repeat(4, moves[3])...)
+	ms = append(ms, repeat(4, moves[1])...)
+	ms = append(ms, repeat(4, moves[2])...)
+	ms = append(ms, repeat(4, moves[0])...)
+	// on bottom and right corner
+	ms = append(ms, repeat(10, moves[1])...)
+	ms = append(ms, repeat(10, moves[3])...)
+	//
+	for i := range ms {
+		fmt.Fprintf(&buf, "Move to: %s\n", ms[i].name)
+		ms[i].f()
+		var b Buffer
+		ta.Render(b.Drawer)
+		if b.HasError() {
+			t.Fatalf("buffer have error rune for move cursor")
+		}
+		fmt.Fprintf(&buf, "%s\n", b)
 	}
 }

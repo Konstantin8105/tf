@@ -1,3 +1,4 @@
+Test: Static
 000000001|█ed maximus tempor condimentum.| width:000000031
 000000002|| width:000000000
 000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
@@ -5,3 +6,508 @@
 000000005|sit amet fringilla nisl pharetra quis.| width:000000038
 rows  =   5
 width =  44
+
+Test: resize to less
+000000001|█ed maximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Test: resize to more
+000000001|█ed maximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|S█d maximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Se█ maximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed█maximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveHome
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveHome
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveHome
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveHome
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveHome
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed m█ximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed ma█imus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed max█mus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maxi█us tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed maxi█us tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed maxi█us tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed maxi█us tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed maxi█us tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveLeft
+000000001|Sed max█mus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveLeft
+000000001|Sed ma█imus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveLeft
+000000001|Sed m█ximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveLeft
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveUp
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveDown
+000000001|Sed █aximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed m█ximus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed ma█imus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed max█mus tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maxi█us tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maxim█s tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maximu█ tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maximus█tempor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maximus █empor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maximus t█mpor condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+
+Move to: CursorMoveRight
+000000001|Sed maximus te█por condimentum.| width:000000031
+000000002|| width:000000000
+000000003|Nam et risus est. Cras ornare iaculis orci, | width:000000044
+000000004|| width:000000000
+000000005|sit amet fringilla nisl pharetra quis.| width:000000038
+rows  =   5
+width =  44
+

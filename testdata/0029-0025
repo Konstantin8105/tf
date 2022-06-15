@@ -1,5 +1,400 @@
+Test: Static
 000000001|█orem ipsum dolor | width:000000018
 000000002|| width:000000000
 000000003|sit amet.| width:000000009
 rows  =   3
 width =  18
+
+Test: resize to less
+000000001|█orem ipsu| width:000000010
+000000002|m dolor | width:000000008
+000000003|| width:000000000
+000000004|sit amet.| width:000000009
+rows  =   4
+width =  10
+
+Test: resize to more
+000000001|█orem ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|L█rem ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lo█em ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lor█m ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveHome
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem█ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem █psum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem i█sum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ip█um dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lorem ip█um dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lorem ip█um dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lorem ip█um dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lorem ip█um dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveLeft
+000000001|Lorem i█sum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveLeft
+000000001|Lorem █psum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveLeft
+000000001|Lorem█ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveLeft
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveUp
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveDown
+000000001|Lore█ ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem█ipsum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem █psum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem i█sum dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ip█um dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ips█m dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ipsu█ dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ipsum█dolor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ipsum █olor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ipsum d█lor | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+
+Move to: CursorMoveRight
+000000001|Lorem ipsum do█or | width:000000018
+000000002|| width:000000000
+000000003|sit amet.| width:000000009
+rows  =   3
+width =  18
+

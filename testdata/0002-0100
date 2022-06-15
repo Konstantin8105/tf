@@ -1,3 +1,285 @@
+Test: Static
 000000001|█界| width:000000002
 rows  =   1
 width =   2
+
+Test: resize to less
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Test: resize to more
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveHome
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveHome
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveHome
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveHome
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveHome
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveUp
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveRight
+000000001|世█| width:000000002
+rows  =   1
+width =   2
+
