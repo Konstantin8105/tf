@@ -67,6 +67,10 @@ func (b *Buffer) Drawer(row, col uint, r rune) {
 	b.m[row][col] = r
 }
 
+func (b *Buffer) Cursor(row, col uint) {
+	b.Drawer(row, col, '█')
+}
+
 func (b Buffer) String() string {
 	var str string
 	var w int
@@ -153,7 +157,7 @@ func check(t *testing.T, ti, wi int, name string) {
 		fmt.Fprintf(&buf, "Test: Static\n")
 		ta.SetWidth(widths[wi])
 		var b Buffer
-		ta.Render(b.Drawer)
+		ta.Render(b.Drawer, b.Cursor)
 		if b.HasError() {
 			t.Fatalf("buffer have error rune")
 		}
@@ -168,7 +172,7 @@ func check(t *testing.T, ti, wi int, name string) {
 		fmt.Fprintf(&buf, "Test: resize to less\n")
 		ta.SetWidth(widths[wi-1])
 		var b Buffer
-		ta.Render(b.Drawer)
+		ta.Render(b.Drawer, b.Cursor)
 		if b.HasError() {
 			t.Fatalf("buffer have error rune")
 		}
@@ -180,7 +184,7 @@ func check(t *testing.T, ti, wi int, name string) {
 		fmt.Fprintf(&buf, "Test: resize to more\n")
 		ta.SetWidth(widths[wi])
 		var b Buffer
-		ta.Render(b.Drawer)
+		ta.Render(b.Drawer, b.Cursor)
 		if b.HasError() {
 			t.Fatalf("buffer have error rune")
 		}
@@ -234,7 +238,7 @@ func check(t *testing.T, ti, wi int, name string) {
 		fmt.Fprintf(&buf, "Move to: %s\n", ms[i].name)
 		ms[i].f()
 		var b Buffer
-		ta.Render(b.Drawer)
+		ta.Render(b.Drawer, b.Cursor)
 		if b.HasError() {
 			t.Fatalf("buffer have error rune for move cursor")
 		}

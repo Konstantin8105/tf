@@ -17,7 +17,6 @@ const (
 
 const (
 	maxIterations = 100000
-	CursorDefault = '█'
 )
 
 type position struct{ row, col uint }
@@ -26,7 +25,6 @@ type TextArea struct {
 	cursor int        // cursor position in render slice
 	render []position // text in screen system coordinate
 
-	Cursor rune
 	Text   []rune
 	Format Format
 }
@@ -63,18 +61,19 @@ func (t *TextArea) InsertRune()      {} // runes and Enter
 func (t *TextArea) RemoveBackspace() {}
 func (t *TextArea) RemoveDel()       {}
 
-func (t *TextArea) Render(drawer func(row, col uint, r rune)) {
-	c := CursorDefault
-	if t.Cursor != 0 {
-		c = t.Cursor
-	}
+func (t *TextArea) Render(
+	drawer func(row, col uint, r rune),
+	cursor func(row, col uint),
+) {
 	for p := range t.render {
 		if t.render[p].row == math.MaxUint || t.render[p].col == math.MaxUint {
 			continue
 		}
-		if p == t.cursor {
-			drawer(t.render[p].row, t.render[p].col, c)
-			continue
+		if cursor != nil {
+			if p == t.cursor {
+				cursor(t.render[p].row, t.render[p].col)
+				continue
+			}
 		}
 		drawer(t.render[p].row, t.render[p].col, t.Text[p])
 	}
