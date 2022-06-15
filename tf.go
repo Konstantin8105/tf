@@ -3,6 +3,7 @@ package tf
 import (
 	"fmt"
 	"math"
+	"unicode"
 )
 
 type Format uint8
@@ -80,6 +81,7 @@ func (t *TextField) Render(
 }
 
 // runewidth is ignored
+// runes '\t', '\v', '\f', '\r', U+0085 (NEL), U+00A0 (NBSP) are iterpreted as '\n'
 func (t *TextField) SetWidth(width uint) {
 	if width == 0 {
 		t.render = nil // reset render
@@ -100,7 +102,7 @@ func (t *TextField) SetWidth(width uint) {
 		}
 		var col uint = 0
 		for ; pos < len(t.Text); pos++ {
-			if (t.Text)[pos] == '\n' {
+			if unicode.IsSpace(t.Text[pos]) && t.Text[pos] != ' ' {
 				pos++
 				break
 			}

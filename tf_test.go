@@ -148,6 +148,9 @@ func check(t *testing.T, ti, wi int, name string) {
 		}
 		// compare
 		if !bytes.Equal(actual, expect) {
+			if err := ioutil.WriteFile(filename+".new", actual, 0644); err != nil {
+				t.Fatalf("Cannot write snapshot to file new: %v", err)
+			}
 			t.Errorf("Snapshots is not same:\n%s\n%s", expect, actual)
 		}
 	}()
