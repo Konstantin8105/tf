@@ -145,9 +145,9 @@ func (t *TextField) CursorMoveRight() {
 // func (t *TextField) CursorPageUp() {
 // 	fmt.Printf("HOLD")
 // }
-func (t *TextField) SelectAll() { // DoubleClick
-	fmt.Printf("HOLD")
-}
+// func (t *TextField) SelectAll() { // DoubleClick
+// 	fmt.Printf("HOLD")
+// }
 func (t *TextField) InsertRune() { // runes and Enter
 	fmt.Printf("HOLD")
 }
