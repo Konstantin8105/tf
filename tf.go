@@ -149,7 +149,7 @@ func (t *TextField) CursorMoveRight() {
 // 	fmt.Printf("HOLD")
 // }
 
-// Insert rune in text without update buffer.
+// Insert rune, key Enter `\n` in text without update buffer.
 // After that function run `SetWidth` for update buffer.
 func (t *TextField) Insert(r rune) {
 	// cursor correction
@@ -165,13 +165,29 @@ func (t *TextField) Insert(r rune) {
 }
 
 func (t *TextField) KeyBackspace() {
-	fmt.Printf("HOLD")
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
+	if len(t.render) == 0 {
+		return
+	}
+	if t.cursor < 1 {
+		return
+	}
+	t.Text = append(t.Text[:t.cursor-1], t.Text[t.cursor:]...)
+	t.cursor--
 }
+
 func (t *TextField) KeyDel() {
-	fmt.Printf("HOLD")
-}
-func (t *TextField) KeyEnter() {
-	fmt.Printf("HOLD")
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
+	if len(t.render) == 0 {
+		return
+	}
+	t.Text = append(t.Text[:t.cursor], t.Text[t.cursor+1:]...)
 }
 
 func (t *TextField) Render(

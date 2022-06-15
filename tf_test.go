@@ -240,6 +240,14 @@ func check(t *testing.T, ti, wi int, name string) {
 			ta.Insert('W')
 			ta.SetWidth(widths[wi])
 		}}, // 4
+		{name: "KeyBackspace", f: func() {
+			ta.KeyBackspace()
+			ta.SetWidth(widths[wi])
+		}}, // 5
+		{name: "KeyDel", f: func() {
+			 ta.KeyDel()
+			ta.SetWidth(widths[wi])
+		}}, // 6
 		// {name: "CursorMoveHome", f: ta.CursorMoveHome},
 		// {name: "CursorMoveEnd", f: ta.CursorMoveEnd},
 		// {name: "CursorPageDown", f: ta.CursorPageDown},
@@ -266,6 +274,20 @@ func check(t *testing.T, ti, wi int, name string) {
 		moves[2], moves[4],
 		moves[1], moves[4],
 		moves[0], moves[4],
+	)
+	// backspace
+	ms = append(ms,
+		moves[3], moves[5],
+		moves[2], moves[5],
+		moves[1], moves[5],
+		moves[0], moves[5],
+	)
+	// del
+	ms = append(ms,
+		moves[3], moves[6],
+		moves[2], moves[6],
+		moves[1], moves[6],
+		moves[0], moves[6],
 	)
 	for i := range ms {
 		fmt.Fprintf(&buf, "Move to: %s\n", ms[i].name)
