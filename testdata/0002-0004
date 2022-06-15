@@ -326,3 +326,226 @@ Move to: InsertRuneA
 rows  =   2
 width =   4
 
+Move to: CursorMoveRight
+000000001|WWW世| width:000000004
+000000002|█界| width:000000002
+rows  =   2
+width =   4
+
+Move to: KeyBackspace
+000000001|WWW█| width:000000004
+000000002|界| width:000000001
+rows  =   2
+width =   4
+
+Move to: CursorMoveLeft
+000000001|WW█W| width:000000004
+000000002|界| width:000000001
+rows  =   2
+width =   4
+
+Move to: KeyBackspace
+000000001|W█W界| width:000000004
+rows  =   1
+width =   4
+
+Move to: CursorMoveDown
+000000001|W█W界| width:000000004
+rows  =   1
+width =   4
+
+Move to: KeyBackspace
+000000001|█W界| width:000000003
+rows  =   1
+width =   3
+
+Move to: CursorMoveUp
+000000001|█W界| width:000000003
+rows  =   1
+width =   3
+
+Move to: KeyBackspace
+000000001|█W界| width:000000003
+rows  =   1
+width =   3
+
+Move to: CursorMoveRight
+000000001|W█界| width:000000003
+rows  =   1
+width =   3
+
+Move to: KeyDel
+000000001|W█| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█界| width:000000002
+rows  =   1
+width =   2
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveDown
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveUp
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyBackspace
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyBackspace
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveUp
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveDown
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: InsertRuneA
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyBackspace
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:100,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,100
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:100,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,100
+000000001|█| width:000000001
+rows  =   1
+width =   1
+

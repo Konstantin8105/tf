@@ -780,3 +780,445 @@ Move to: InsertRuneA
 rows  =   9
 width =   4
 
+Move to: CursorMoveRight
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|aWm█| width:000000004
+000000008|WWtW| width:000000004
+000000009|.| width:000000001
+rows  =   9
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|aW█W| width:000000004
+000000008|WtW.| width:000000004
+rows  =   8
+width =   4
+
+Move to: CursorMoveLeft
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|a█eW| width:000000004
+000000008|WtW.| width:000000004
+rows  =   8
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|█eWW| width:000000004
+000000008|tW.| width:000000003
+rows  =   8
+width =   4
+
+Move to: CursorMoveDown
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|WeWW| width:000000004
+000000008|█W.| width:000000003
+rows  =   8
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit | width:000000004
+000000007|WeW█| width:000000004
+000000008|W.| width:000000002
+rows  =   8
+width =   4
+
+Move to: CursorMoveUp
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sit█| width:000000004
+000000007|WeWt| width:000000004
+000000008|W.| width:000000002
+rows  =   8
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|si█W| width:000000004
+000000007|eWtW| width:000000004
+000000008|.| width:000000001
+rows  =   8
+width =   4
+
+Move to: CursorMoveRight
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|si █| width:000000004
+000000007|eWtW| width:000000004
+000000008|.| width:000000001
+rows  =   8
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|si █| width:000000004
+000000007|WtW.| width:000000004
+rows  =   7
+width =   4
+
+Move to: CursorMoveLeft
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|si█e| width:000000004
+000000007|WtW.| width:000000004
+rows  =   7
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|si█W| width:000000004
+000000007|tW.| width:000000003
+rows  =   7
+width =   4
+
+Move to: CursorMoveDown
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sieW| width:000000004
+000000007|tW█| width:000000003
+rows  =   7
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|sieW| width:000000004
+000000007|t█| width:000000002
+rows  =   7
+width =   4
+
+Move to: CursorMoveUp
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|s█eW| width:000000004
+000000007|tW| width:000000002
+rows  =   7
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|s█Wt| width:000000004
+000000007|W| width:000000001
+rows  =   7
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|█WtW| width:000000004
+rows  =   6
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r | width:000000002
+000000006|█tW| width:000000003
+rows  =   6
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █t| width:000000004
+000000006|W| width:000000001
+rows  =   6
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █W| width:000000004
+rows  =   5
+width =   4
+
+Move to: CursorMoveUp
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|do█o| width:000000004
+000000005|r tW| width:000000004
+rows  =   5
+width =   4
+
+Move to: CursorMoveDown
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █W| width:000000004
+rows  =   5
+width =   4
+
+Move to: CursorMoveLeft
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r█tW| width:000000004
+rows  =   5
+width =   4
+
+Move to: CursorMoveRight
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █W| width:000000004
+rows  =   5
+width =   4
+
+Move to: InsertRuneA
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W█| width:000000004
+000000006|W| width:000000001
+rows  =   6
+width =   4
+
+Move to: KeyBackspace
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █W| width:000000004
+rows  =   5
+width =   4
+
+Move to: KeyDel
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:left-top
+000000001|█ore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:right-top
+000000001|Lor█| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:left-bottom
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|█ W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:right-bottom
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:1,1
+000000001|Lore| width:000000004
+000000002|m█ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:100,1
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r█W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:1,100
+000000001|Lore| width:000000004
+000000002|m i█| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorMoveRight
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|█um | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorMoveRight
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|s█m | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorMoveRight
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|su█ | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:left-top
+000000001|█ore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:right-top
+000000001|Lor█| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:left-bottom
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|█ W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:right-bottom
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r █| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:1,1
+000000001|Lore| width:000000004
+000000002|m█ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:100,1
+000000001|Lore| width:000000004
+000000002|m ip| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r█W| width:000000003
+rows  =   5
+width =   4
+
+Move to: CursorPosition:1,100
+000000001|Lore| width:000000004
+000000002|m i█| width:000000004
+000000003|sum | width:000000004
+000000004|dolo| width:000000004
+000000005|r W| width:000000003
+rows  =   5
+width =   4
+

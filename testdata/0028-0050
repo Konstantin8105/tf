@@ -388,3 +388,267 @@ Move to: InsertRuneA
 rows  =   2
 width =  19
 
+Move to: CursorMoveRight
+000000001|Lorem ipsWu█ dolor | width:000000019
+000000002|sit ameWWtW.| width:000000012
+rows  =   2
+width =  19
+
+Move to: KeyBackspace
+000000001|Lorem ipsW█ dolor | width:000000018
+000000002|sit ameWWtW.| width:000000012
+rows  =   2
+width =  18
+
+Move to: CursorMoveLeft
+000000001|Lorem ips█m dolor | width:000000018
+000000002|sit ameWWtW.| width:000000012
+rows  =   2
+width =  18
+
+Move to: KeyBackspace
+000000001|Lorem ip█m dolor | width:000000017
+000000002|sit ameWWtW.| width:000000012
+rows  =   2
+width =  17
+
+Move to: CursorMoveDown
+000000001|Lorem ipWm dolor | width:000000017
+000000002|sit ameW█tW.| width:000000012
+rows  =   2
+width =  17
+
+Move to: KeyBackspace
+000000001|Lorem ipWm dolor | width:000000017
+000000002|sit ame█tW.| width:000000011
+rows  =   2
+width =  17
+
+Move to: CursorMoveUp
+000000001|Lorem i█Wm dolor | width:000000017
+000000002|sit ameWtW.| width:000000011
+rows  =   2
+width =  17
+
+Move to: KeyBackspace
+000000001|Lorem █Wm dolor | width:000000016
+000000002|sit ameWtW.| width:000000011
+rows  =   2
+width =  16
+
+Move to: CursorMoveRight
+000000001|Lorem p█m dolor | width:000000016
+000000002|sit ameWtW.| width:000000011
+rows  =   2
+width =  16
+
+Move to: KeyDel
+000000001|Lorem p█ dolor | width:000000015
+000000002|sit ameWtW.| width:000000011
+rows  =   2
+width =  15
+
+Move to: CursorMoveLeft
+000000001|Lorem █m dolor | width:000000015
+000000002|sit ameWtW.| width:000000011
+rows  =   2
+width =  15
+
+Move to: KeyDel
+000000001|Lorem █ dolor | width:000000014
+000000002|sit ameWtW.| width:000000011
+rows  =   2
+width =  14
+
+Move to: CursorMoveDown
+000000001|Lorem m dolor | width:000000014
+000000002|sit am█WtW.| width:000000011
+rows  =   2
+width =  14
+
+Move to: KeyDel
+000000001|Lorem m dolor | width:000000014
+000000002|sit am█tW.| width:000000010
+rows  =   2
+width =  14
+
+Move to: CursorMoveUp
+000000001|Lorem █ dolor | width:000000014
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  14
+
+Move to: KeyDel
+000000001|Lorem █dolor | width:000000013
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  13
+
+Move to: KeyBackspace
+000000001|Lorem█dolor | width:000000012
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  12
+
+Move to: KeyDel
+000000001|Lorem█olor | width:000000011
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  11
+
+Move to: KeyBackspace
+000000001|Lore█olor | width:000000010
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: KeyDel
+000000001|Lore█lor | width:000000009
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: CursorMoveUp
+000000001|Lore█lor | width:000000009
+000000002|sit amWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: CursorMoveDown
+000000001|Loreolor | width:000000009
+000000002|sit █mWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: CursorMoveLeft
+000000001|Loreolor | width:000000009
+000000002|sit█amWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: CursorMoveRight
+000000001|Loreolor | width:000000009
+000000002|sit █mWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: InsertRuneA
+000000001|Loreolor | width:000000009
+000000002|sit W█mWtW.| width:000000011
+rows  =   2
+width =  11
+
+Move to: KeyBackspace
+000000001|Loreolor | width:000000009
+000000002|sit █mWtW.| width:000000010
+rows  =   2
+width =  10
+
+Move to: KeyDel
+000000001|Loreolor | width:000000009
+000000002|sit █WtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:left-top
+000000001|█oreolor | width:000000009
+000000002|sit mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:right-top
+000000001|Loreolor █| width:000000010
+000000002|sit mWtW.| width:000000009
+rows  =   2
+width =  10
+
+Move to: CursorPosition:left-bottom
+000000001|Loreolor | width:000000009
+000000002|█it mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:right-bottom
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:1,1
+000000001|Loreolor | width:000000009
+000000002|s█t mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:100,1
+000000001|Loreolor | width:000000009
+000000002|s█t mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:1,100
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorMoveRight
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorMoveRight
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorMoveRight
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:left-top
+000000001|█oreolor | width:000000009
+000000002|sit mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:right-top
+000000001|Loreolor █| width:000000010
+000000002|sit mWtW.| width:000000009
+rows  =   2
+width =  10
+
+Move to: CursorPosition:left-bottom
+000000001|Loreolor | width:000000009
+000000002|█it mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:right-bottom
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:1,1
+000000001|Loreolor | width:000000009
+000000002|s█t mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:100,1
+000000001|Loreolor | width:000000009
+000000002|s█t mWtW.| width:000000009
+rows  =   2
+width =   9
+
+Move to: CursorPosition:1,100
+000000001|Loreolor | width:000000009
+000000002|sit mWtW█| width:000000009
+rows  =   2
+width =   9
+

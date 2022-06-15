@@ -1,25 +1,25 @@
 Test: Static
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Test: resize to less
 000000001|█| width:000000001
 000000002|o| width:000000001
-000000003|W| width:000000001
+000000003|o| width:000000001
 rows  =   3
 width =   1
 
 Test: resize to more
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveRight
 000000001|f█| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
@@ -36,138 +36,6 @@ rows  =   2
 width =   2
 
 Move to: CursorMoveRight
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveLeft
-000000001|f█| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveLeft
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveLeft
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveLeft
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveLeft
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveUp
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveUp
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveUp
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveUp
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveUp
-000000001|█o| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveRight
-000000001|f█| width:000000002
-000000002|W| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveRight
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveRight
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveRight
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|fo| width:000000002
-000000002|█| width:000000001
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
 000000001|fo| width:000000002
 000000002|█| width:000000001
 rows  =   2
@@ -175,49 +43,181 @@ width =   2
 
 Move to: CursorMoveLeft
 000000001|f█| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveLeft
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveLeft
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveLeft
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|█o| width:000000002
-000000002|W| width:000000001
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveUp
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveRight
+000000001|f█| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveRight
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveRight
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveRight
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|fo| width:000000002
+000000002|█| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveLeft
+000000001|f█| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveUp
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveUp
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveUp
+000000001|█o| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveUp
+000000001|█o| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
@@ -349,20 +349,20 @@ width =   2
 
 Move to: InsertRuneA
 000000001|fo| width:000000002
-000000002|█W| width:000000002
+000000002|█o| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveLeft
 000000001|f█| width:000000002
-000000002|WW| width:000000002
+000000002|Wo| width:000000002
 rows  =   2
 width =   2
 
 Move to: InsertRuneA
 000000001|fW| width:000000002
 000000002|█W| width:000000002
-000000003|W| width:000000001
+000000003|o| width:000000001
 rows  =   3
 width =   2
 
@@ -376,14 +376,14 @@ width =   2
 Move to: InsertRuneA
 000000001|fW| width:000000002
 000000002|oW| width:000000002
-000000003|█W| width:000000002
+000000003|█o| width:000000002
 rows  =   3
 width =   2
 
 Move to: CursorMoveUp
 000000001|fW| width:000000002
 000000002|█W| width:000000002
-000000003|WW| width:000000002
+000000003|Wo| width:000000002
 rows  =   3
 width =   2
 
@@ -391,7 +391,244 @@ Move to: InsertRuneA
 000000001|fW| width:000000002
 000000002|W█| width:000000002
 000000003|WW| width:000000002
-000000004|W| width:000000001
+000000004|o| width:000000001
 rows  =   4
 width =   2
+
+Move to: CursorMoveRight
+000000001|fW| width:000000002
+000000002|Wo| width:000000002
+000000003|█W| width:000000002
+000000004|o| width:000000001
+rows  =   4
+width =   2
+
+Move to: KeyBackspace
+000000001|fW| width:000000002
+000000002|W█| width:000000002
+000000003|Wo| width:000000002
+rows  =   3
+width =   2
+
+Move to: CursorMoveLeft
+000000001|fW| width:000000002
+000000002|█W| width:000000002
+000000003|Wo| width:000000002
+rows  =   3
+width =   2
+
+Move to: KeyBackspace
+000000001|f█| width:000000002
+000000002|WW| width:000000002
+000000003|o| width:000000001
+rows  =   3
+width =   2
+
+Move to: CursorMoveDown
+000000001|fW| width:000000002
+000000002|W█| width:000000002
+000000003|o| width:000000001
+rows  =   3
+width =   2
+
+Move to: KeyBackspace
+000000001|fW| width:000000002
+000000002|█o| width:000000002
+rows  =   2
+width =   2
+
+Move to: CursorMoveUp
+000000001|█W| width:000000002
+000000002|Wo| width:000000002
+rows  =   2
+width =   2
+
+Move to: KeyBackspace
+000000001|█W| width:000000002
+000000002|Wo| width:000000002
+rows  =   2
+width =   2
+
+Move to: CursorMoveRight
+000000001|f█| width:000000002
+000000002|Wo| width:000000002
+rows  =   2
+width =   2
+
+Move to: KeyDel
+000000001|f█| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: CursorMoveLeft
+000000001|█W| width:000000002
+000000002|o| width:000000001
+rows  =   2
+width =   2
+
+Move to: KeyDel
+000000001|█o| width:000000002
+rows  =   1
+width =   2
+
+Move to: CursorMoveDown
+000000001|█o| width:000000002
+rows  =   1
+width =   2
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveUp
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyBackspace
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyBackspace
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveUp
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveDown
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: InsertRuneA
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyBackspace
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: KeyDel
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:100,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,100
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorMoveRight
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-top
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:left-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:right-bottom
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:100,1
+000000001|█| width:000000001
+rows  =   1
+width =   1
+
+Move to: CursorPosition:1,100
+000000001|█| width:000000001
+rows  =   1
+width =   1
 

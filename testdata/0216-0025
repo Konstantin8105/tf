@@ -1,1117 +1,2053 @@
 Test: Static
-000000001|█ee: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Test: resize to less
 000000001|█ee: https| width:000000010
 000000002|://golang.| width:000000010
-000000003|oWWWWrg/| width:000000008
-000000004|// WWWYWou| width:000000010
-000000005| WWWcaWn e| width:000000010
-000000006|ditWWW thW| width:000000010
-000000007|is code!| width:000000008
-000000008|// Click h| width:000000010
-000000009|ere and st| width:000000010
-000000010|art typing| width:000000010
-000000011|.| width:000000001
-000000012|package ma| width:000000010
-000000013|WWWin| width:000000005
-000000014|iWmport "f| width:000000010
-000000015|mt"| width:000000003
-000000016|func main(| width:000000010
-000000017|) {| width:000000003
-000000018|•// 012345| width:000000010
-000000019|6890123456| width:000000010
-000000020|7890123456| width:000000010
-000000021|7890| width:000000004
-000000022|•fmt.Print| width:000000010
-000000023|ln("[red]H| width:000000010
-000000024|ello, 世界[w| width:000000010
-000000025|hite]")| width:000000007
-rows  =  25
+000000003|org/| width:000000004
+000000004|// You can| width:000000010
+000000005| edit this| width:000000010
+000000006| code!| width:000000006
+000000007|// Click h| width:000000010
+000000008|ere and st| width:000000010
+000000009|art typing| width:000000010
+000000010|.| width:000000001
+000000011|package ma| width:000000010
+000000012|in| width:000000002
+000000013|import "fm| width:000000010
+000000014|t"| width:000000002
+000000015|func main(| width:000000010
+000000016|) {| width:000000003
+000000017|•// 012345| width:000000010
+000000018|6890123456| width:000000010
+000000019|7890123456| width:000000010
+000000020|7890| width:000000004
+000000021|•fmt.Print| width:000000010
+000000022|ln("[red]H| width:000000010
+000000023|ello, 世界[w| width:000000010
+000000024|hite]")| width:000000007
+000000025|}| width:000000001
+000000026|You will s| width:000000010
+000000027|ee:| width:000000003
+000000028|世界| width:000000002
+rows  =  28
 width =  10
 
 Test: resize to more
-000000001|█ee: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|S█e: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|S█e: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|Se█: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|Se█: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See█ https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See█ https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See:█https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See:█https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|See█ https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See█ https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|Se█: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|Se█: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|S█e: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|S█e: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|█ee: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|█ee: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|█g/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|█/ You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|█/ WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|█| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|█ thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|█/ Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|█/ Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|█ping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|█ thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|█/ Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|█/ WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|█| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|█g/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|█/ You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|█ee: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|█ee: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|S█e: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|S█e: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|Se█: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|Se█: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See█ https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See█ https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See:█https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See:█https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/█| width:000000004
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// Y█u can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// █WWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!█| width:000000002
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W t█Wis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|/█ Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// █lick here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|y█ing.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|//█Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|█ping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|/█ Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start █| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|█/ Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start█t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code█| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and star█ t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou W█WcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this co█e| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWW█W| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org█| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWW█W| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org█| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWW█W| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org█| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/█| width:000000004
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this co█e| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// █WWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!█| width:000000002
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W t█Wis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|/█ Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// █lick here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|y█ing.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|ypi█g.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|p█ckage main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|pac█age maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|i█port "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWm█ort "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|f█nc main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|fun█ main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•█/ 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•//█012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|2█4567890| width:000000009
+000000011|•fmt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234█67890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•█mt.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|2345█7890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•f█t.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|23456█890| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fm█.Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567█90| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt█Println("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|2345678█0| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.█rintln("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|23456789█| width:000000009
-000000012|•fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.P█intln("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|█fmt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pr█ntln("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•█mt.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█tln("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•f█t.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Prin█ln("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fm█.Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Print█n("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt█Println("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Printl█("[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveRight
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.█rintln("[red]Hello,| width:000000025
-000000013| 世界[white]")| width:000000012
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println█"[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: InsertRuneA
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.W█rintln("[red]Hello| width:000000025
-000000013|, 世界[white]")| width:000000013
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnW█"[red]Hello| width:000000025
+000000012|, 世界[white]")| width:000000013
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveLeft
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.█Println("[red]Hello| width:000000025
-000000013|, 世界[white]")| width:000000013
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println█("[red]Hello| width:000000025
+000000012|, 世界[white]")| width:000000013
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: InsertRuneA
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.W█Println("[red]Hell| width:000000025
-000000013|o, 世界[white]")| width:000000014
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnW█("[red]Hell| width:000000025
+000000012|o, 世界[white]")| width:000000014
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveDown
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.WWPrintln("[red]Hell| width:000000025
-000000013|o, 世界[█hite]")| width:000000014
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWW("[red]Hell| width:000000025
+000000012|o, 世界[white]"█| width:000000014
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: InsertRuneA
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.WWPrintln("[red]Hell| width:000000025
-000000013|o, 世界[W█hite]")| width:000000015
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWW("[red]Hell| width:000000025
+000000012|o, 世界[white]"W█| width:000000015
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: CursorMoveUp
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.WW█rintln("[red]Hell| width:000000025
-000000013|o, 世界[Wwhite]")| width:000000015
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWW█"[red]Hell| width:000000025
+000000012|o, 世界[white]"W)| width:000000015
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
 width =  25
 
 Move to: InsertRuneA
-000000001|See: https://golang.oWWWW| width:000000025
-000000002|rg/| width:000000003
-000000003|// WWWYWou WWWcaWn editWW| width:000000025
-000000004|W thWis code!| width:000000013
-000000005|// Click here and start t| width:000000025
-000000006|yping.| width:000000006
-000000007|package maWWWin| width:000000015
-000000008|iWmport "fmt"| width:000000013
-000000009|func main() {| width:000000013
-000000010|•// 012345689012345678901| width:000000025
-000000011|234567890| width:000000009
-000000012|•fmt.WWW█rintln("[red]Hel| width:000000025
-000000013|lo, 世界[Wwhite]")| width:000000016
-rows  =  13
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWWW█"[red]Hel| width:000000025
+000000012|lo, 世界[white]"W)| width:000000016
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveRight
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWWW(█[red]Hel| width:000000025
+000000012|lo, 世界[white]"W)| width:000000016
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWWW█[red]Hell| width:000000025
+000000012|o, 世界[white]"W)| width:000000015
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveLeft
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWW█"[red]Hell| width:000000025
+000000012|o, 世界[white]"W)| width:000000015
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnW█"[red]Hello| width:000000025
+000000012|, 世界[white]"W)| width:000000014
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveDown
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWW"[red]Hello| width:000000025
+000000012|, 世界[white]"W█| width:000000014
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlnWW"[red]Hello| width:000000025
+000000012|, 世界[white]"█| width:000000013
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveUp
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Println█W"[red]Hello| width:000000025
+000000012|, 世界[white]")| width:000000013
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Printl█W"[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveRight
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlW█"[red]Hello,| width:000000025
+000000012| 世界[white]")| width:000000012
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PrintlW█[red]Hello, | width:000000025
+000000012|世界[white]")| width:000000011
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveLeft
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Printl█"[red]Hello, | width:000000025
+000000012|世界[white]")| width:000000011
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Printl█[red]Hello, 世| width:000000025
+000000012|界[white]")| width:000000010
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: CursorMoveDown
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Printl"[red]Hello, 世| width:000000025
+000000012|界[white]")█| width:000000011
+000000013|}| width:000000001
+000000014|You will see:| width:000000013
+000000015|世界| width:000000002
+rows  =  15
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Printl"[red]Hello, 世| width:000000025
+000000012|界[white]")█| width:000000011
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveUp
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Print█"[red]Hello, 世| width:000000025
+000000012|界[white]")}| width:000000011
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Print█[red]Hello, 世界| width:000000025
+000000012|[white]")}| width:000000010
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Prin█[red]Hello, 世界[| width:000000025
+000000012|white]")}| width:000000009
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Prin█red]Hello, 世界[w| width:000000025
+000000012|hite]")}| width:000000008
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█red]Hello, 世界[wh| width:000000025
+000000012|ite]")}| width:000000007
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█ed]Hello, 世界[whi| width:000000025
+000000012|te]")}| width:000000006
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveUp
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|23456789█| width:000000009
+000000011|•fmt.Prired]Hello, 世界[whi| width:000000025
+000000012|te]")}| width:000000006
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveDown
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█ed]Hello, 世界[whi| width:000000025
+000000012|te]")}| width:000000006
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveLeft
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pr█red]Hello, 世界[whi| width:000000025
+000000012|te]")}| width:000000006
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveRight
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█ed]Hello, 世界[whi| width:000000025
+000000012|te]")}| width:000000006
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: InsertRuneA
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.PriW█ed]Hello, 世界[wh| width:000000025
+000000012|ite]")}| width:000000007
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyBackspace
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█ed]Hello, 世界[whi| width:000000025
+000000012|te]")}| width:000000006
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: KeyDel
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pri█d]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:left-top
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:right-top
+000000001|See: https://golang.org/█| width:000000025
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:left-bottom
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|█界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:right-bottom
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界█| width:000000003
+rows  =  14
+width =  25
+
+Move to: CursorPosition:1,1
+000000001|See: https://golang.org/| width:000000024
+000000002|/█ You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:100,1
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世█| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:1,100
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this cod█| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveRight
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|█| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveRight
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|█/ Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorMoveRight
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|/█ Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:left-top
+000000001|█ee: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:right-top
+000000001|See: https://golang.org/█| width:000000025
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:left-bottom
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|█界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:right-bottom
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界█| width:000000003
+rows  =  14
+width =  25
+
+Move to: CursorPosition:1,1
+000000001|See: https://golang.org/| width:000000024
+000000002|/█ You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:100,1
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世█| width:000000002
+rows  =  14
+width =  25
+
+Move to: CursorPosition:1,100
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this cod█| width:000000025
+000000003|!| width:000000001
+000000004|// Click here and start t| width:000000025
+000000005|yping.| width:000000006
+000000006|package main| width:000000012
+000000007|import "fmt"| width:000000012
+000000008|func main() {| width:000000013
+000000009|•// 012345689012345678901| width:000000025
+000000010|234567890| width:000000009
+000000011|•fmt.Pried]Hello, 世界[whit| width:000000025
+000000012|e]")}| width:000000005
+000000013|You will see:| width:000000013
+000000014|世界| width:000000002
+rows  =  14
 width =  25
 
