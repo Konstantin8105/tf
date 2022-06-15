@@ -117,71 +117,71 @@ width =  10
 
 Move to: CursorMoveUp
 000000001|Lorem ipsu| width:000000010
-000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000002|█ dolor | width:000000008
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveRight
-000000001|Lorem ipsu| width:000000010
+000000001|L█rem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|s█t amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveRight
-000000001|Lorem ipsu| width:000000010
+000000001|Lo█em ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|si█ amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveRight
-000000001|Lorem ipsu| width:000000010
+000000001|Lor█m ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|sit█amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveRight
-000000001|Lorem ipsu| width:000000010
+000000001|Lore█ ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|sit █met.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveDown
 000000001|Lorem ipsu| width:000000010
-000000002|m dolor | width:000000008
-000000003|sit █met.| width:000000009
+000000002|m do█or | width:000000008
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
@@ -236,36 +236,36 @@ width =  10
 
 Move to: CursorMoveUp
 000000001|Lorem ipsu| width:000000010
-000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000002|█ dolor | width:000000008
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveUp
-000000001|Lorem ipsu| width:000000010
+000000001|█orem ipsu| width:000000010
 000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 
 Move to: CursorMoveDown
 000000001|Lorem ipsu| width:000000010
-000000002|m dolor | width:000000008
-000000003|█it amet.| width:000000009
+000000002|█ dolor | width:000000008
+000000003|sit amet.| width:000000009
 rows  =   3
 width =  10
 

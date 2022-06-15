@@ -58,8 +58,17 @@ func (t *TextField) CursorMoveUp() {
 	if t.cursor == 0 {
 		return
 	}
-
-	fmt.Printf("HOLD")
+	for c := t.cursor - 1;0 <= c ; c-- {
+		if t.render[t.cursor].row-1 == t.render[c].row &&
+			t.render[t.cursor].col == t.render[c].col {
+			t.cursor = c
+			return
+		}
+		if t.render[t.cursor].row-2 == t.render[c].row {
+			t.cursor = c - 1
+			return
+		}
+	}
 }
 
 func (t *TextField) CursorMoveDown() {
@@ -74,9 +83,6 @@ func (t *TextField) CursorMoveDown() {
 		return
 	}
 	for c := t.cursor + 1; c < len(t.render); c++ {
-		if t.render[c].newline {
-			continue
-		}
 		if t.render[t.cursor].row+1 == t.render[c].row &&
 			t.render[t.cursor].col == t.render[c].col {
 			t.cursor = c

@@ -96,38 +96,38 @@ rows  =   2
 width =   2
 
 Move to: CursorMoveUp
-000000001|•| width:000000001
-000000002|█•| width:000000002
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
-000000001|•| width:000000001
-000000002|█•| width:000000002
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
-000000001|•| width:000000001
-000000002|█•| width:000000002
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
-000000001|•| width:000000001
-000000002|█•| width:000000002
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
-000000001|•| width:000000001
-000000002|█•| width:000000002
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveRight
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
