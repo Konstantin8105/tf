@@ -245,7 +245,7 @@ func check(t *testing.T, ti, wi int, name string) {
 			ta.SetWidth(widths[wi])
 		}}, // 5
 		{name: "KeyDel", f: func() {
-			 ta.KeyDel()
+			ta.KeyDel()
 			ta.SetWidth(widths[wi])
 		}}, // 6
 		// {name: "CursorMoveHome", f: ta.CursorMoveHome},
@@ -289,6 +289,12 @@ func check(t *testing.T, ti, wi int, name string) {
 		moves[1], moves[6],
 		moves[0], moves[6],
 	)
+	// all moves
+	ms = append(ms, moves[5], moves[6], moves[5], moves[6])
+	for p := range moves {
+		ms = append(ms,  moves[p])
+	}
+	ms = append(ms, repeat(3, moves[3])...)
 	for i := range ms {
 		fmt.Fprintf(&buf, "Move to: %s\n", ms[i].name)
 		ms[i].f()

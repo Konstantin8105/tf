@@ -119,10 +119,10 @@ func (t *TextField) CursorMoveRight() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if t.cursor == len(t.render)-1 {
+	if len(t.render) == 0 {
 		return
 	}
-	if len(t.render) == 0 {
+	if t.cursor == len(t.render)-1 {
 		return
 	}
 	for t.cursor+1 <= len(t.render)-1 {
