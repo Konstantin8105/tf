@@ -126,7 +126,7 @@ func check(t *testing.T, ti, wi int, name string) {
 	var (
 		buf bytes.Buffer
 		f   = String
-		ta  = TextArea{Text: txts[ti], Format: f}
+		ta  = TextField{Text: txts[ti], Format: f}
 	)
 	// compare
 	defer func() {

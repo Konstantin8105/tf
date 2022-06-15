@@ -21,7 +21,7 @@ const (
 
 type position struct{ row, col uint }
 
-type TextArea struct {
+type TextField struct {
 	cursor int        // cursor position in render slice
 	render []position // text in screen system coordinate
 
@@ -29,10 +29,10 @@ type TextArea struct {
 	Format Format
 }
 
-func (t *TextArea) CursorPosition() {}
-func (t *TextArea) CursorMoveUp()   {}
-func (t *TextArea) CursorMoveDown() {}
-func (t *TextArea) CursorMoveLeft() {
+func (t *TextField) CursorPosition() {}
+func (t *TextField) CursorMoveUp()   {}
+func (t *TextField) CursorMoveDown() {}
+func (t *TextField) CursorMoveLeft() {
 	t.cursor--
 	if t.cursor < 0 {
 		t.cursor = 0
@@ -42,7 +42,7 @@ func (t *TextArea) CursorMoveLeft() {
 		t.CursorMoveLeft()
 	}
 }
-func (t *TextArea) CursorMoveRight() {
+func (t *TextField) CursorMoveRight() {
 	t.cursor++
 	if len(t.render) <= t.cursor {
 		t.cursor--
@@ -52,16 +52,16 @@ func (t *TextArea) CursorMoveRight() {
 		t.CursorMoveRight()
 	}
 }
-func (t *TextArea) CursorMoveHome()  {}
-func (t *TextArea) CursorMoveEnd()   {}
-func (t *TextArea) CursorPageDown()  {}
-func (t *TextArea) CursorPageUp()    {}
-func (t *TextArea) SelectAll()       {} // DoubleClick
-func (t *TextArea) InsertRune()      {} // runes and Enter
-func (t *TextArea) RemoveBackspace() {}
-func (t *TextArea) RemoveDel()       {}
+func (t *TextField) CursorMoveHome()  {}
+func (t *TextField) CursorMoveEnd()   {}
+func (t *TextField) CursorPageDown()  {}
+func (t *TextField) CursorPageUp()    {}
+func (t *TextField) SelectAll()       {} // DoubleClick
+func (t *TextField) InsertRune()      {} // runes and Enter
+func (t *TextField) RemoveBackspace() {}
+func (t *TextField) RemoveDel()       {}
 
-func (t *TextArea) Render(
+func (t *TextField) Render(
 	drawer func(row, col uint, r rune),
 	cursor func(row, col uint),
 ) {
@@ -80,7 +80,7 @@ func (t *TextArea) Render(
 }
 
 // runewidth is ignored
-func (t *TextArea) SetWidth(width uint) {
+func (t *TextField) SetWidth(width uint) {
 	if width == 0 {
 		t.render = nil // reset render
 		return
