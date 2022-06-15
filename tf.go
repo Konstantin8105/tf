@@ -59,6 +59,7 @@ func (t *TextField) CursorMoveUp() {
 		return
 	}
 
+	fmt.Printf("HOLD")
 }
 
 func (t *TextField) CursorMoveDown() {
@@ -101,7 +102,7 @@ func (t *TextField) CursorMoveLeft() {
 	}
 	for 0 <= t.cursor-1 {
 		t.cursor--
-		if t.render[t.cursor].space {
+		if !t.render[t.cursor].newline {
 			break
 		}
 	}
@@ -120,24 +121,24 @@ func (t *TextField) CursorMoveRight() {
 	}
 	for t.cursor+1 <= len(t.render)-1 {
 		t.cursor++
-		if t.render[t.cursor].space {
+		if !t.render[t.cursor].newline {
 			break
 		}
 	}
 }
 
-func (t *TextField) CursorMoveHome() {
-	fmt.Printf("HOLD")
-}
-func (t *TextField) CursorMoveEnd() {
-	fmt.Printf("HOLD")
-}
-func (t *TextField) CursorPageDown() {
-	fmt.Printf("HOLD")
-}
-func (t *TextField) CursorPageUp() {
-	fmt.Printf("HOLD")
-}
+// func (t *TextField) CursorMoveHome() {
+// 	fmt.Printf("HOLD")
+// }
+// func (t *TextField) CursorMoveEnd() {
+// 	fmt.Printf("HOLD")
+// }
+// func (t *TextField) CursorPageDown() {
+// 	fmt.Printf("HOLD")
+// }
+// func (t *TextField) CursorPageUp() {
+// 	fmt.Printf("HOLD")
+// }
 func (t *TextField) SelectAll() { // DoubleClick
 	fmt.Printf("HOLD")
 }

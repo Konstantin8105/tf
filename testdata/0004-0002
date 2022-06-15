@@ -41,87 +41,87 @@ Move to: CursorMoveRight
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
+Move to: CursorMoveLeft
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|•| width:000000001
-000000002|•█| width:000000002
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|•| width:000000001
-000000002|•█| width:000000002
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|•| width:000000001
-000000002|•█| width:000000002
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|•| width:000000001
-000000002|•█| width:000000002
-rows  =   2
-width =   2
-
-Move to: CursorMoveDown
-000000001|•| width:000000001
-000000002|•█| width:000000002
+Move to: CursorMoveLeft
+000000001|█| width:000000001
+000000002|••| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveDown
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveDown
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveDown
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
+rows  =   2
+width =   2
+
+Move to: CursorMoveDown
+000000001|•| width:000000001
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 
 Move to: CursorMoveUp
 000000001|•| width:000000001
-000000002|•█| width:000000002
+000000002|█•| width:000000002
 rows  =   2
 width =   2
 

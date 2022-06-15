@@ -42,319 +42,79 @@ rows  =   8
 width =  25
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
+000000001|S█d maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
 000000004|Nam et risus est. Cras or| width:000000025
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|haretra quis.| width:000000013
 rows  =   8
 width =  25
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
+000000001|Se█ maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
 000000004|Nam et risus est. Cras or| width:000000025
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|haretra quis.| width:000000013
 rows  =   8
 width =  25
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
+000000001|Sed█maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
 000000004|Nam et risus est. Cras or| width:000000025
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|haretra quis.| width:000000013
 rows  =   8
 width =  25
 
 Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
+000000001|Sed █aximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
 000000004|Nam et risus est. Cras or| width:000000025
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveHome
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveHome
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveHome
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveHome
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveHome
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveDown
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|haretra quis.| width:000000013
 rows  =   8
 width =  25
 
 Move to: CursorMoveLeft
-000000001|█ed maximus tempor condim| width:000000025
+000000001|Sed█maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveLeft
+000000001|Se█ maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveLeft
+000000001|S█d maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
 000000004|Nam et risus est. Cras or| width:000000025
@@ -378,66 +138,6 @@ rows  =   8
 width =  25
 
 Move to: CursorMoveLeft
-000000001|█ed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis.| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveLeft
-000000001|█ed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis.| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|█ed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis.| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|█ed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis.| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
-000000001|█ed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis.| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveUp
 000000001|█ed maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
@@ -497,6 +197,114 @@ Move to: CursorMoveDown
 rows  =   8
 width =  25
 
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|█are iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|█are iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|█are iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|█are iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|█are iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|n█re iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|na█e iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nar█ iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare█iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
 Move to: CursorMoveDown
 000000001|Sed maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
@@ -545,7 +353,259 @@ Move to: CursorMoveDown
 rows  =   8
 width =  25
 
+Move to: CursorMoveLeft
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl █| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveLeft
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl█p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveLeft
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nis█ p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveLeft
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveUp
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
 Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveDown
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla ni█l p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nis█ p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl█p| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
+000000001|Sed maximus tempor condim| width:000000025
+000000002|entum.| width:000000006
+000000003|| width:000000000
+000000004|Nam et risus est. Cras or| width:000000025
+000000005|nare iaculis orci, | width:000000019
+000000006|| width:000000000
+000000007|sit amet fringilla nisl █| width:000000025
+000000008|haretra quis.| width:000000013
+rows  =   8
+width =  25
+
+Move to: CursorMoveRight
 000000001|Sed maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
@@ -557,7 +617,7 @@ Move to: CursorMoveDown
 rows  =   8
 width =  25
 
-Move to: CursorMoveDown
+Move to: CursorMoveRight
 000000001|Sed maximus tempor condim| width:000000025
 000000002|entum.| width:000000006
 000000003|| width:000000000
@@ -565,7 +625,7 @@ Move to: CursorMoveDown
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|█aretra quis.| width:000000013
+000000008|h█retra quis.| width:000000013
 rows  =   8
 width =  25
 
@@ -577,7 +637,7 @@ Move to: CursorMoveRight
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|ha█etra quis.| width:000000013
 rows  =   8
 width =  25
 
@@ -589,7 +649,7 @@ Move to: CursorMoveRight
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|har█tra quis.| width:000000013
 rows  =   8
 width =  25
 
@@ -601,7 +661,7 @@ Move to: CursorMoveRight
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|hare█ra quis.| width:000000013
 rows  =   8
 width =  25
 
@@ -613,7 +673,7 @@ Move to: CursorMoveRight
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|haret█a quis.| width:000000013
 rows  =   8
 width =  25
 
@@ -625,67 +685,7 @@ Move to: CursorMoveRight
 000000005|nare iaculis orci, | width:000000019
 000000006|| width:000000000
 000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
-rows  =   8
-width =  25
-
-Move to: CursorMoveRight
-000000001|Sed maximus tempor condim| width:000000025
-000000002|entum.| width:000000006
-000000003|| width:000000000
-000000004|Nam et risus est. Cras or| width:000000025
-000000005|nare iaculis orci, | width:000000019
-000000006|| width:000000000
-000000007|sit amet fringilla nisl p| width:000000025
-000000008|haretra quis█| width:000000013
+000000008|haretr█ quis.| width:000000013
 rows  =   8
 width =  25
 

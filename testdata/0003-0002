@@ -18,8 +18,8 @@ rows  =   2
 width =   2
 
 Move to: CursorMoveRight
-000000001|fo| width:000000002
-000000002|█| width:000000001
+000000001|f█| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
@@ -41,33 +41,33 @@ Move to: CursorMoveRight
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|fo| width:000000002
-000000002|█| width:000000001
+Move to: CursorMoveLeft
+000000001|f█| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|fo| width:000000002
-000000002|█| width:000000001
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|fo| width:000000002
-000000002|█| width:000000001
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|fo| width:000000002
-000000002|█| width:000000001
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
-Move to: CursorMoveHome
-000000001|fo| width:000000002
-000000002|█| width:000000001
+Move to: CursorMoveLeft
+000000001|█o| width:000000002
+000000002|o| width:000000001
 rows  =   2
 width =   2
 
@@ -174,7 +174,7 @@ rows  =   2
 width =   2
 
 Move to: CursorMoveLeft
-000000001|█o| width:000000002
+000000001|f█| width:000000002
 000000002|o| width:000000001
 rows  =   2
 width =   2
