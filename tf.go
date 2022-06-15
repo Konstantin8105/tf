@@ -24,6 +24,7 @@ const (
 type position struct {
 	row, col uint
 	space    bool
+	newline  bool
 }
 
 type TextField struct {
@@ -52,6 +53,12 @@ func (t *TextField) CursorMoveUp() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
+	if len(t.render) == 0 {
+		return
+	}
+	if t.cursor == 0 {
+		return
+	}
 
 }
 
@@ -67,9 +74,9 @@ func (t *TextField) CursorMoveDown() {
 		return
 	}
 	for c := t.cursor + 1; c < len(t.render); c++ {
-		if t.render[c].row == math.MaxUint || t.render[c].col == math.MaxUint {
-			continue
-		}
+		// 		if t.render[c].space {
+		// 			continue
+		// 		}
 		if t.render[t.cursor].row+1 == t.render[c].row &&
 			t.render[t.cursor].col == t.render[c].col {
 			t.cursor = c
@@ -80,7 +87,6 @@ func (t *TextField) CursorMoveDown() {
 			return
 		}
 	}
-	return
 }
 
 func (t *TextField) CursorMoveLeft() {
@@ -96,8 +102,7 @@ func (t *TextField) CursorMoveLeft() {
 	}
 	for 0 <= t.cursor-1 {
 		t.cursor--
-		if t.render[t.cursor].row != math.MaxUint &&
-			t.render[t.cursor].col != math.MaxUint {
+		if t.render[t.cursor].space {
 			break
 		}
 	}
@@ -116,8 +121,7 @@ func (t *TextField) CursorMoveRight() {
 	}
 	for t.cursor+1 <= len(t.render)-1 {
 		t.cursor++
-		if t.render[t.cursor].row != math.MaxUint &&
-			t.render[t.cursor].col != math.MaxUint {
+		if t.render[t.cursor].space {
 			break
 		}
 	}
@@ -138,9 +142,9 @@ func (t *TextField) CursorPageUp() {
 func (t *TextField) SelectAll() { // DoubleClick
 	fmt.Fprintf(os.Stdout, "HOLD")
 }
-func (t *TextField) InsertRune() {// runes and Enter
+func (t *TextField) InsertRune() { // runes and Enter
 	fmt.Fprintf(os.Stdout, "HOLD")
-} 
+}
 func (t *TextField) RemoveBackspace() {
 	fmt.Fprintf(os.Stdout, "HOLD")
 }
@@ -153,10 +157,11 @@ func (t *TextField) Render(
 	cursor func(row, col uint),
 ) {
 	for p := range t.render {
-		if t.render[p].row == math.MaxUint || t.render[p].col == math.MaxUint {
+		if t.render[p].newline {
 			continue
 		}
 		if t.render[p].space {
+			drawer(t.render[p].row, t.render[p].col, '•')
 			continue
 		}
 		drawer(t.render[p].row, t.render[p].col, t.Text[p])
@@ -197,10 +202,15 @@ func (t *TextField) SetWidth(width uint) {
 			// render
 			t.render[pos] = position{row: row, col: col}
 			//
-			if unicode.IsSpace(t.Text[pos]) && t.Text[pos] != ' ' {
-				t.render[pos].space = true
+			if t.Text[pos] == '\n' {
+				t.render[pos].newline = true
 				pos++
 				break
+			}
+			if unicode.IsSpace(t.Text[pos]) && t.Text[pos] != ' ' {
+				t.render[pos].space = true
+				// pos++
+				// break
 			}
 			if col == width {
 				break

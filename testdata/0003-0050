@@ -14,7 +14,7 @@ rows  =   1
 width =   3
 
 Move to: CursorMoveRight
-000000001|f█o| width:000000003
+000000001|fo█| width:000000003
 rows  =   1
 width =   3
 
@@ -144,7 +144,7 @@ rows  =   1
 width =   3
 
 Move to: CursorMoveLeft
-000000001|f█o| width:000000003
+000000001|█oo| width:000000003
 rows  =   1
 width =   3
 
@@ -234,7 +234,7 @@ rows  =   1
 width =   3
 
 Move to: CursorMoveRight
-000000001|f█o| width:000000003
+000000001|fo█| width:000000003
 rows  =   1
 width =   3
 
