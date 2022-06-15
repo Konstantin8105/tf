@@ -30,29 +30,53 @@ type TextField struct {
 	Format Format
 }
 
+func (t *TextField) cursorInRect() {
+	if t.cursor < 0 {
+		t.cursor = 0
+	}
+	if len(t.render) <= t.cursor {
+		t.cursor = len(t.render) - 1
+	}
+}
+
 func (t *TextField) CursorPosition() {}
 func (t *TextField) CursorMoveUp()   {}
 func (t *TextField) CursorMoveDown() {}
+
 func (t *TextField) CursorMoveLeft() {
-	t.cursor--
-	if t.cursor < 0 {
-		t.cursor = 0
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
+	if t.cursor == 0 {
 		return
 	}
-	if t.render[t.cursor].row == math.MaxUint || t.render[t.cursor].col == math.MaxUint {
-		t.CursorMoveLeft()
-	}
-}
-func (t *TextField) CursorMoveRight() {
-	t.cursor++
-	if len(t.render) <= t.cursor {
+	for 0 <= t.cursor {
 		t.cursor--
-		return
-	}
-	if t.render[t.cursor].row == math.MaxUint || t.render[t.cursor].col == math.MaxUint {
-		t.CursorMoveRight()
+		if t.render[t.cursor].row != math.MaxUint &&
+			t.render[t.cursor].col != math.MaxUint {
+			break
+		}
 	}
 }
+
+func (t *TextField) CursorMoveRight() {
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
+	if t.cursor == len(t.render)-1 {
+		return
+	}
+	for t.cursor <= len(t.render)-1 {
+		t.cursor++
+		if t.render[t.cursor].row != math.MaxUint &&
+			t.render[t.cursor].col != math.MaxUint {
+			break
+		}
+	}
+}
+
 func (t *TextField) CursorMoveHome()  {}
 func (t *TextField) CursorMoveEnd()   {}
 func (t *TextField) CursorPageDown()  {}
@@ -80,8 +104,10 @@ func (t *TextField) Render(
 	}
 }
 
-// runewidth is ignored
-// runes '\t', '\v', '\f', '\r', U+0085 (NEL), U+00A0 (NBSP) are iterpreted as '\n'
+// runewidth is ignored.
+//
+// runes '\t', '\v', '\f', '\r', U+0085 (NEL), U+00A0 (NBSP) are iterpreted as '\n'.
+//
 func (t *TextField) SetWidth(width uint) {
 	if width == 0 {
 		t.render = nil // reset render
