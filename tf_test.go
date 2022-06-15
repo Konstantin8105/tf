@@ -121,18 +121,18 @@ func Test(t *testing.T) {
 		for wi := range widths {
 			name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
 			t.Run(name, func(t *testing.T) {
-				check(t, ti, wi, name)
+				check(t, string(txts[ti]), wi, name)
 			})
 		}
 	}
 }
 
-func check(t *testing.T, ti, wi int, name string) {
+func check(t *testing.T, str string, wi int, name string) {
 	// prepare variables
 	var (
 		buf bytes.Buffer
 		f   = String
-		ta  = TextField{Text: txts[ti], Format: f}
+		ta  = TextField{Text: []rune(str), Format: f}
 	)
 	// compare
 	defer func() {
@@ -248,6 +248,34 @@ func check(t *testing.T, ti, wi int, name string) {
 			ta.KeyDel()
 			ta.SetWidth(widths[wi])
 		}}, // 6
+		{name: "CursorPosition:left-top", f: func() {
+			ta.CursorPosition(0, 0)
+			ta.SetWidth(widths[wi])
+		}}, // 7
+		{name: "CursorPosition:right-top", f: func() {
+			ta.CursorPosition(0, 100)
+			ta.SetWidth(widths[wi])
+		}}, // 8
+		{name: "CursorPosition:left-bottom", f: func() {
+			ta.CursorPosition(100, 0)
+			ta.SetWidth(widths[wi])
+		}}, // 9
+		{name: "CursorPosition:right-bottom", f: func() {
+			ta.CursorPosition(100, 100)
+			ta.SetWidth(widths[wi])
+		}}, // 10
+		{name: "CursorPosition:1,1", f: func() {
+			ta.CursorPosition(1, 1)
+			ta.SetWidth(widths[wi])
+		}}, // 11
+		{name: "CursorPosition:100,1", f: func() {
+			ta.CursorPosition(100, 1)
+			ta.SetWidth(widths[wi])
+		}}, // 12
+		{name: "CursorPosition:1,100", f: func() {
+			ta.CursorPosition(1, 100)
+			ta.SetWidth(widths[wi])
+		}}, // 13
 		// {name: "CursorMoveHome", f: ta.CursorMoveHome},
 		// {name: "CursorMoveEnd", f: ta.CursorMoveEnd},
 		// {name: "CursorPageDown", f: ta.CursorPageDown},
@@ -292,11 +320,16 @@ func check(t *testing.T, ti, wi int, name string) {
 	// all moves
 	ms = append(ms, moves[5], moves[6], moves[5], moves[6])
 	for p := range moves {
-		ms = append(ms,  moves[p])
+		ms = append(ms, moves[p])
 	}
 	ms = append(ms, repeat(3, moves[3])...)
+	// cursor position
+	ms = append(ms, moves[7], moves[8], moves[9], moves[10],
+		moves[11], moves[12], moves[13])
+	// render
 	for i := range ms {
 		fmt.Fprintf(&buf, "Move to: %s\n", ms[i].name)
+		ta.SetWidth(widths[wi])
 		ms[i].f()
 		var b Buffer
 		ta.Render(b.Drawer, b.Cursor)
@@ -309,3 +342,14 @@ func check(t *testing.T, ti, wi int, name string) {
 		fmt.Fprintf(&buf, "%s\n", b)
 	}
 }
+
+// func Example() {
+// 	ta := TextField{Text: txts[5]}
+// 	ta.SetWidth(50)
+// 	ta.CursorPosition(100, 1)
+// 	var b Buffer
+// 	ta.SetWidth(50)
+// 	ta.Render(b.Drawer, b.Cursor)
+// 	fmt.Println(b.String())
+// 	// Output:
+// }

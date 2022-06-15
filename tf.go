@@ -43,8 +43,45 @@ func (t *TextField) cursorInRect() {
 	}
 }
 
-func (t *TextField) CursorPosition() {
-	fmt.Printf("HOLD")
+func (t *TextField) CursorPosition(row, col uint) {
+	// cursor correction
+	t.cursorInRect()
+	defer t.cursorInRect()
+	// action
+	// find cursor position
+	if len(t.render) == 0 {
+		t.cursor = 0
+		return
+	}
+	if row == 0 && col == 0 {
+		t.cursor = 0
+		return
+	}
+	if last := len(t.render) - 1; t.render[last].row <= row &&
+		t.render[last].col <= col {
+		t.cursor = last
+		return
+	}
+	for i := range t.render {
+		if t.render[i].row == row && t.render[i].col == col {
+			t.cursor = i
+			return
+		}
+		if t.render[i].row == row+1 {
+			t.cursor = i-1
+			return
+		}
+	}
+	for i := len(t.render) - 1; 0 <= i; i-- {
+		if t.render[i].col == col {
+			t.cursor = i
+			return
+		}
+	}
+	panic(fmt.Errorf(
+		"cursor is not found: %v %v %v",
+		row, col, t.render[len(t.render)-1],
+	))
 }
 
 func (t *TextField) CursorMoveUp() {
