@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"sync"
 	"testing"
 )
 
@@ -44,6 +43,7 @@ You will see:
 世界
 `,
 		"世界",
+		"\t\n\r\t",
 	} {
 		txts = append(txts, []rune(str))
 	}
@@ -67,8 +67,10 @@ func (b *Buffer) Drawer(row, col uint, r rune) {
 	b.m[row][col] = r
 }
 
+const defaultCursor = '█'
+
 func (b *Buffer) Cursor(row, col uint) {
-	b.Drawer(row, col, '█')
+	b.Drawer(row, col, defaultCursor)
 }
 
 func (b Buffer) String() string {
@@ -89,7 +91,7 @@ func (b Buffer) String() string {
 	return str
 }
 
-func (b Buffer) HasError() bool {
+func (b Buffer) ErrorRune() bool {
 	for r := range b.m {
 		for c := range b.m[r] {
 			if b.m[r][c] == errorRune {
@@ -100,25 +102,30 @@ func (b Buffer) HasError() bool {
 	return false
 }
 
+func (b Buffer) HasCursor() bool {
+	found := false
+	for r := range b.m {
+		for c := range b.m[r] {
+			if b.m[r][c] == defaultCursor{
+				found = true
+			}
+		}
+	}
+	return found
+}
+
+
 const testdata = "testdata"
 
 func Test(t *testing.T) {
-	var wg sync.WaitGroup
 	for ti := range txts {
 		for wi := range widths {
-			wg.Add(1)
-			go func(ti, wi int) {
-				defer func() {
-					wg.Done()
-				}()
-				name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
-				t.Run(name, func(t *testing.T) {
-					check(t, ti, wi, name)
-				})
-			}(ti, wi)
+			name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
+			t.Run(name, func(t *testing.T) {
+				check(t, ti, wi, name)
+			})
 		}
 	}
-	wg.Wait()
 }
 
 func check(t *testing.T, ti, wi int, name string) {
@@ -148,10 +155,15 @@ func check(t *testing.T, ti, wi int, name string) {
 		}
 		// compare
 		if !bytes.Equal(actual, expect) {
-			if err := ioutil.WriteFile(filename+".new", actual, 0644); err != nil {
+			f2 := filename + ".new"
+			if err := ioutil.WriteFile(f2, actual, 0644); err != nil {
 				t.Fatalf("Cannot write snapshot to file new: %v", err)
 			}
-			t.Errorf("Snapshots is not same:\n%s\n%s", expect, actual)
+			t.Errorf("Snapshots is not same:\nActual:\n%s\nExpect:\n%s\nmeld %s %s",
+				actual,
+				expect,
+				filename, f2,
+			)
 		}
 	}()
 	// test: static
@@ -161,8 +173,11 @@ func check(t *testing.T, ti, wi int, name string) {
 		ta.SetWidth(widths[wi])
 		var b Buffer
 		ta.Render(b.Drawer, b.Cursor)
-		if b.HasError() {
+		if b.ErrorRune() {
 			t.Fatalf("buffer have error rune")
+		}
+		if !b.HasCursor() {
+			t.Fatalf("no cursor")
 		}
 		fmt.Fprintf(&buf, "%s\n", b)
 		s1 = b.String()
@@ -176,8 +191,11 @@ func check(t *testing.T, ti, wi int, name string) {
 		ta.SetWidth(widths[wi-1])
 		var b Buffer
 		ta.Render(b.Drawer, b.Cursor)
-		if b.HasError() {
+		if b.ErrorRune() {
 			t.Fatalf("buffer have error rune")
+		}
+		if !b.HasCursor() {
+			t.Fatalf("no cursor")
 		}
 		fmt.Fprintf(&buf, "%s\n", b)
 	}
@@ -188,8 +206,11 @@ func check(t *testing.T, ti, wi int, name string) {
 		ta.SetWidth(widths[wi])
 		var b Buffer
 		ta.Render(b.Drawer, b.Cursor)
-		if b.HasError() {
+		if b.ErrorRune() {
 			t.Fatalf("buffer have error rune")
+		}
+		if !b.HasCursor() {
+			t.Fatalf("no cursor")
 		}
 		fmt.Fprintf(&buf, "%s\n", b)
 		s2 = b.String()
@@ -242,8 +263,11 @@ func check(t *testing.T, ti, wi int, name string) {
 		ms[i].f()
 		var b Buffer
 		ta.Render(b.Drawer, b.Cursor)
-		if b.HasError() {
+		if b.ErrorRune() {
 			t.Fatalf("buffer have error rune for move cursor")
+		}
+		if !b.HasCursor() {
+			t.Fatalf("no cursor")
 		}
 		fmt.Fprintf(&buf, "%s\n", b)
 	}

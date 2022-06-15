@@ -203,8 +203,8 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
-000000002|// You can edit this code!| width:000000026
+000000001|See: https://golang.org/| width:000000024
+000000002|// Y█u can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
@@ -220,9 +220,9 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
-000000003|// Click here and start typing.| width:000000031
+000000003|// C█ick here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
@@ -237,10 +237,10 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
-000000004|package main| width:000000012
+000000004|pack█ge main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
@@ -254,11 +254,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impo█t "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -271,11 +271,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impo█t "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -288,11 +288,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impo█t "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -305,11 +305,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impo█t "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -322,11 +322,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impo█t "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -339,11 +339,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impo█t "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -356,11 +356,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: █ttps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|impor█ "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -373,11 +373,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: h█tps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|import█"fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -390,11 +390,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: ht█ps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|import █fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -407,11 +407,11 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: htt█s://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
+000000005|import "█mt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
@@ -424,12 +424,12 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See: htt█s://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
-000000006|func main() {| width:000000013
+000000006|func mai█() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
 000000009|| width:000000000
@@ -441,13 +441,13 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See: htt█s://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
-000000007|| width:000000000
+000000007|█| width:000000001
 000000008|// 012345689012345678901234567890| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
@@ -458,14 +458,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See: htt█s://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|█/ 012345689012345678901234567890| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -475,7 +475,7 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See: htt█s://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -483,6 +483,23 @@ Move to: CursorMoveDown
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
+000000009|█| width:000000001
+000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
+000000011|}| width:000000001
+000000012|You will see:| width:000000013
+000000013|世界| width:000000002
+rows  =  13
+width =  36
+
+Move to: CursorMoveLeft
+000000001|See: https://golang.org/| width:000000024
+000000002|// You can edit this code!| width:000000026
+000000003|// Click here and start typing.| width:000000031
+000000004|package main| width:000000012
+000000005|import "fmt"| width:000000012
+000000006|func main() {| width:000000013
+000000007|| width:000000000
+000000008|// 012345689012345678901234567890█| width:000000034
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -492,14 +509,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveLeft
-000000001|See: ht█ps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 01234568901234567890123456789█| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -509,14 +526,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveLeft
-000000001|See: h█tps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 0123456890123456789012345678█0| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -526,31 +543,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveLeft
-000000001|See: █ttps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
-000000009|| width:000000000
-000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
-000000011|}| width:000000001
-000000012|You will see:| width:000000013
-000000013|世界| width:000000002
-rows  =  13
-width =  36
-
-Move to: CursorMoveLeft
-000000001|See:█https://golang.org/| width:000000024
-000000002|// You can edit this code!| width:000000026
-000000003|// Click here and start typing.| width:000000031
-000000004|package main| width:000000012
-000000005|import "fmt"| width:000000012
-000000006|func main() {| width:000000013
-000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 012345689012345678901234567█90| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -560,14 +560,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 012345689012345678901234567█90| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -577,14 +577,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 012345689012345678901234567█90| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -594,14 +594,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 012345689012345678901234567█90| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -611,14 +611,14 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveUp
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
 000000005|import "fmt"| width:000000012
 000000006|func main() {| width:000000013
 000000007|| width:000000000
-000000008|// 012345689012345678901234567890| width:000000033
+000000008|// 012345689012345678901234567█90| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
@@ -628,7 +628,7 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -636,7 +636,7 @@ Move to: CursorMoveDown
 000000006|func main() {| width:000000013
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
-000000009|| width:000000000
+000000009|█| width:000000001
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
@@ -645,7 +645,7 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -654,7 +654,7 @@ Move to: CursorMoveDown
 000000007|| width:000000000
 000000008|// 012345689012345678901234567890| width:000000033
 000000009|| width:000000000
-000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
+000000010|█mt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
 000000013|世界| width:000000002
@@ -662,7 +662,7 @@ rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -672,14 +672,14 @@ Move to: CursorMoveDown
 000000008|// 012345689012345678901234567890| width:000000033
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
-000000011|}| width:000000001
+000000011|█| width:000000001
 000000012|You will see:| width:000000013
 000000013|世界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -690,13 +690,13 @@ Move to: CursorMoveDown
 000000009|| width:000000000
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
-000000012|You will see:| width:000000013
+000000012|█ou will see:| width:000000013
 000000013|世界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -708,12 +708,12 @@ Move to: CursorMoveDown
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|█界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -725,12 +725,12 @@ Move to: CursorMoveDown
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|█界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -742,12 +742,12 @@ Move to: CursorMoveDown
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|█界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -759,12 +759,12 @@ Move to: CursorMoveDown
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|█界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -776,12 +776,12 @@ Move to: CursorMoveDown
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|█界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveDown
-000000001|See:█https://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -793,12 +793,12 @@ Move to: CursorMoveDown
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|█界| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: █ttps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -810,12 +810,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世█| width:000000002
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: h█tps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -827,12 +827,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: ht█ps://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -844,12 +844,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: htt█s://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -861,12 +861,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: http█://golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -878,12 +878,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: https█//golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -895,12 +895,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: https:█/golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -912,12 +912,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: https:/█golang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -929,12 +929,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: https://█olang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -946,12 +946,12 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 
 Move to: CursorMoveRight
-000000001|See: https://g█lang.org/| width:000000024
+000000001|See: https://golang.org/| width:000000024
 000000002|// You can edit this code!| width:000000026
 000000003|// Click here and start typing.| width:000000031
 000000004|package main| width:000000012
@@ -963,7 +963,7 @@ Move to: CursorMoveRight
 000000010|fmt.Println("[red]Hello, 世界[white]")| width:000000036
 000000011|}| width:000000001
 000000012|You will see:| width:000000013
-000000013|世界| width:000000002
+000000013|世界█| width:000000003
 rows  =  13
 width =  36
 

@@ -5,8 +5,9 @@ rows  =   2
 width =   1
 
 Test: resize to less
-rows  =   0
-width =   0
+000000001|█| width:000000001
+rows  =   1
+width =   1
 
 Test: resize to more
 000000001|█| width:000000001
@@ -219,62 +220,62 @@ rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
 Move to: CursorMoveDown
-000000001|█| width:000000001
-000000002|界| width:000000001
+000000001|世| width:000000001
+000000002|█| width:000000001
 rows  =   2
 width =   1
 
