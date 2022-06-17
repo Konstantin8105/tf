@@ -215,9 +215,9 @@ func (t *TextField) Insert(r rune) {
 		t.Text = append(t.Text, r)
 		var row, col uint
 		row = t.render[t.cursor].row
-		col = t.render[t.cursor].col+1
+		col = t.render[t.cursor].col + 1
 		t.render[len(t.render)-1].t = symbol // symbol rune is not valid
-		t.render = append(t.render,position{row: row, col: col, t: endtext})
+		t.render = append(t.render, position{row: row, col: col, t: endtext})
 		return
 	}
 	t.Text = append(t.Text[:t.cursor], append([]rune{r}, t.Text[t.cursor:]...)...)
@@ -267,7 +267,7 @@ func (t *TextField) KeyDel() {
 func (t *TextField) Render(
 	drawer func(row, col uint, r rune),
 	cursor func(row, col uint),
-) {
+) (height uint) {
 	// cursor correction
 	t.cursorInRect()
 	defer t.cursorInRect()
@@ -287,6 +287,7 @@ func (t *TextField) Render(
 	if cursor != nil {
 		cursor(t.render[t.cursor].row, t.render[t.cursor].col)
 	}
+	return t.render[len(t.render)-1].row + 1
 }
 
 // runewidth is ignored.
