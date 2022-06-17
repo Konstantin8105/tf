@@ -8,38 +8,69 @@ import (
 
 type Format uint8
 
-const (
-	String Format = iota
-	Integer
-	UnsignedInteger
-	Float
-	end
-)
+func UnsignedInteger(r rune) (insert bool) {
+	switch r {
+	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9':
+		return true
+	}
+	return false
+}
+
+func Integer(r rune) (insert bool) {
+	if UnsignedInteger(r) {
+		return true
+	}
+	switch r {
+	case '+', '-':
+		return true
+	}
+	return false
+}
+
+func Float(r rune) (insert bool) {
+	if Integer(r) {
+		return true
+	}
+	switch r {
+	case '.', 'e', 'E':
+		return true
+	}
+	return false
+}
 
 const (
 	maxIterations = 100000
 )
 
+type symType uint8
+
+const (
+	symbol symType = iota
+	space
+	newline
+	endtext
+)
+
 type position struct {
 	row, col uint
-	space    bool
-	newline  bool
+	t        symType
 }
 
 type TextField struct {
 	cursor int        // cursor position in render slice
 	render []position // text in screen system coordinate
 
-	Text   []rune
-	Format Format
+	Text     []rune
+	Filter   func(r rune) (insert bool)
+	NoUpdate bool
 }
 
 func (t *TextField) cursorInRect() {
-	if t.cursor < 0 {
-		t.cursor = 0
+	if len(t.render) == 0 {
+		panic(fmt.Errorf("not valid. Try run SetWidth: %#v %#v", t.render, t.Text))
 	}
-	if len(t.render) <= t.cursor {
-		t.cursor = len(t.render) - 1
+	if 0 < len(t.render) && len(t.render) <= int(t.cursor) {
+		t.cursor = (len(t.render)) - 1
 	}
 }
 
@@ -68,7 +99,7 @@ func (t *TextField) CursorPosition(row, col uint) {
 			return
 		}
 		if t.render[i].row == row+1 {
-			t.cursor = i-1
+			t.cursor = i - 1
 			return
 		}
 	}
@@ -145,7 +176,7 @@ func (t *TextField) CursorMoveLeft() {
 	}
 	for 0 <= t.cursor-1 {
 		t.cursor--
-		if !t.render[t.cursor].newline {
+		if t.render[t.cursor].t != newline {
 			break
 		}
 	}
@@ -164,7 +195,10 @@ func (t *TextField) CursorMoveRight() {
 	}
 	for t.cursor+1 <= len(t.render)-1 {
 		t.cursor++
-		if !t.render[t.cursor].newline {
+		if t.render[t.cursor].t != newline {
+			break
+		}
+		if t.render[t.cursor].t != endtext {
 			break
 		}
 	}
@@ -193,12 +227,23 @@ func (t *TextField) Insert(r rune) {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if len(t.Text) == 0 {
-		t.Text = []rune{r}
+	if t.Filter != nil && !t.Filter(r) {
+		return
+	}
+	// Is need update?
+	defer func() {
+		t.cursor++
+		t.NoUpdate = false
+	}()
+	if t.cursor == 0 {
+		t.Text = append([]rune{r}, t.Text...)
+		t.render = append([]position{{row: 0, col: 0, t: symbol}}, t.render...)
 		return
 	}
 	t.Text = append(t.Text[:t.cursor], append([]rune{r}, t.Text[t.cursor:]...)...)
-	t.cursor++
+	t.render = append(t.render[:t.cursor], append([]position{
+		position{row: 0, col: 0, t: symbol},
+	}, t.render[t.cursor:]...)...)
 }
 
 func (t *TextField) KeyBackspace() {
@@ -212,6 +257,10 @@ func (t *TextField) KeyBackspace() {
 	if t.cursor < 1 {
 		return
 	}
+	// Is need update?
+	defer func() {
+		t.NoUpdate = false
+	}()
 	t.Text = append(t.Text[:t.cursor-1], t.Text[t.cursor:]...)
 	t.cursor--
 }
@@ -222,6 +271,14 @@ func (t *TextField) KeyDel() {
 	defer t.cursorInRect()
 	// action
 	if len(t.render) == 0 {
+		return
+	}
+	// Is need update?
+	defer func() {
+		t.NoUpdate = false
+	}()
+	if len(t.render) == t.cursor+1 {
+		// nothing to do
 		return
 	}
 	t.Text = append(t.Text[:t.cursor], t.Text[t.cursor+1:]...)
@@ -236,21 +293,20 @@ func (t *TextField) Render(
 	defer t.cursorInRect()
 	// action
 	for p := range t.render {
-		if t.render[p].newline {
+		if t.render[p].t == endtext {
 			continue
 		}
-		if t.render[p].space {
+		if t.render[p].t == newline {
+			continue
+		}
+		if t.render[p].t == space {
 			drawer(t.render[p].row, t.render[p].col, '•')
 			continue
 		}
 		drawer(t.render[p].row, t.render[p].col, t.Text[p])
 	}
 	if cursor != nil {
-		if len(t.render) == 0 {
-			cursor(0, 0)
-		} else {
-			cursor(t.render[t.cursor].row, t.render[t.cursor].col)
-		}
+		cursor(t.render[t.cursor].row, t.render[t.cursor].col)
 	}
 }
 
@@ -259,35 +315,59 @@ func (t *TextField) Render(
 // runes '\t', '\v', '\f', '\r', U+0085 (NEL), U+00A0 (NBSP) are iterpreted as '\n'.
 //
 func (t *TextField) SetWidth(width uint) {
-	if width == 0 {
-		t.render = nil // reset render
+	// Minimal width of text is:
+	// 1 symbol - rune
+	// 2 symbol - cursor
+	const minWidth = 2
+	if width < minWidth {
+		t.render = []position{{row: 0, col: 0, t: endtext}} // reset render
 		return
 	}
+	// change width for cursor place
+	width -= 1
+	// update text
+	if t.NoUpdate {
+		return
+	}
+	defer func() {
+		t.NoUpdate = false
+	}()
 	// prepare render
 	t.render = make([]position, len(t.Text))
-	for i := range t.render {
-		t.render[i].row = math.MaxUint
-		t.render[i].col = math.MaxUint
+	{
+		var wrong uint = math.MaxUint
+		for i := range t.render {
+			t.render[i].row = wrong
+			t.render[i].col = wrong
+		}
+		defer func() {
+			for i := range t.render {
+				if t.render[i].row == wrong || t.render[i].col == wrong {
+					panic(fmt.Errorf("not valid render: %#v", t.render))
+				}
+			}
+		}()
 	}
 
 	pos := 0
 	var row uint = 0
+	var col uint = 0
 	for iter := 0; ; iter++ {
 		if len(t.Text) <= pos {
 			break
 		}
-		var col uint = 0
+		col = 0
 		for ; pos < len(t.Text); pos++ {
 			// render
 			t.render[pos] = position{row: row, col: col}
 			//
 			if t.Text[pos] == '\n' {
-				t.render[pos].newline = true
+				t.render[pos].t = newline
 				pos++
 				break
 			}
 			if unicode.IsSpace(t.Text[pos]) && t.Text[pos] != ' ' {
-				t.render[pos].space = true
+				t.render[pos].t = space
 				// pos++
 				// break
 			}
@@ -301,4 +381,11 @@ func (t *TextField) SetWidth(width uint) {
 			panic(fmt.Errorf("iterations: %d. `%s` %#v", iter, string(t.Text), t))
 		}
 	}
+	if row != 0 {
+		row -= 1
+	}
+	if col != 0 {
+		col -= 1
+	}
+	t.render = append(t.render, position{row: row, col: col, t: endtext})
 }

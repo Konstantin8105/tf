@@ -9,14 +9,6 @@ import (
 	"testing"
 )
 
-var formats []Format
-
-func init() {
-	for i := 0; i < int(end); i++ {
-		formats = append(formats, Format(i))
-	}
-}
-
 var txts [][]rune
 
 func init() {
@@ -131,8 +123,7 @@ func check(t *testing.T, str string, wi int, name string) {
 	// prepare variables
 	var (
 		buf bytes.Buffer
-		f   = String
-		ta  = TextField{Text: []rune(str), Format: f}
+		ta  = TextField{Text: []rune(str)}
 	)
 	// compare
 	defer func() {
@@ -343,13 +334,58 @@ func check(t *testing.T, str string, wi int, name string) {
 	}
 }
 
-// func Example() {
-// 	ta := TextField{Text: txts[5]}
-// 	ta.SetWidth(50)
-// 	ta.CursorPosition(100, 1)
-// 	var b Buffer
-// 	ta.SetWidth(50)
-// 	ta.Render(b.Drawer, b.Cursor)
-// 	fmt.Println(b.String())
-// 	// Output:
-// }
+func TestInsert(t *testing.T) {
+	tcs := []struct {
+		input  string
+		filter func(r rune) bool
+		expect string
+	}{
+		{
+			input:  "1o*5,2ds0qw.epp",
+			filter: UnsignedInteger,
+			expect: "1520",
+		},
+		{
+			input:  "wefv-sdl;1o*5,2ds0qw.epp",
+			filter: UnsignedInteger,
+			expect: "1520",
+		},
+		{
+			input:  "wefv-sdl;1o*5,2ds0qw.epp",
+			filter: Integer,
+			expect: "-1520",
+		},
+		{
+			input:  "wefv+sdl;1o*5,2ds0qw.epp",
+			filter: Integer,
+			expect: "+1520",
+		},
+		{
+			input:  "wfv+sdl;1o*5,2ds0qw.csscs3dfd4sdpp",
+			filter: Float,
+			expect: "+1520.34",
+		},
+		{
+			input:  "+1.cvb232cvbevcb-cv0wcvb3",
+			filter: Float,
+			expect: "+1.232e-03",
+		},
+	}
+	var width uint = 20
+	for i := range tcs {
+		t.Run(fmt.Sprintf("%02d", i), func(t *testing.T) {
+			ta := TextField{Text: []rune(""), Filter: tcs[i].filter}
+			ta.SetWidth(width)
+			for _, r := range []rune(tcs[i].input) {
+				ta.Insert(r)
+				ta.SetWidth(width)
+			}
+			var b Buffer
+			ta.Render(b.Drawer, nil)
+			actual := string(b.m[0])
+			if actual != tcs[i].expect {
+				t.Errorf("result is not same: %s", actual)
+			}
+		})
+	}
+}
