@@ -33,6 +33,8 @@ You will see:
 `,
 		"世界",
 		"\t\n\r\t",
+		"\r",
+		"\n",
 	} {
 		txts = append(txts, []rune(str))
 	}
@@ -119,7 +121,7 @@ const testdata = "testdata"
 func Test(t *testing.T) {
 	for ti := range txts {
 		for wi := range widths {
-			name := fmt.Sprintf("%04d-%04d", len(txts[ti]), widths[wi])
+			name := fmt.Sprintf("%04d-%04d-%04d", len(txts[ti]), ti, widths[wi])
 			t.Run(name, func(t *testing.T) {
 				check(t, string(txts[ti]), wi, name)
 			})
@@ -282,6 +284,9 @@ func check(t *testing.T, str string, wi int, name string) {
 	}
 	var ms []movement
 
+	// cursor position
+	ms = append(ms, moves[7], moves[8], moves[9], moves[10],
+		moves[11], moves[12], moves[13])
 	// right - left, down - up
 	ms = append(ms, repeat(4, moves[3])...)
 	ms = append(ms, repeat(5, moves[2])...)

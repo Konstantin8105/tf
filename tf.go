@@ -80,10 +80,6 @@ func (t *TextField) CursorPosition(row, col uint) {
 	defer t.cursorInRect()
 	// action
 	// find cursor position
-	if len(t.render) == 0 {
-		t.cursor = 0
-		return
-	}
 	if row == 0 && col == 0 {
 		t.cursor = 0
 		return
@@ -120,9 +116,6 @@ func (t *TextField) CursorMoveUp() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if len(t.render) == 0 {
-		return
-	}
 	if t.cursor == 0 {
 		return
 	}
@@ -144,9 +137,6 @@ func (t *TextField) CursorMoveDown() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if len(t.render) == 0 {
-		return
-	}
 	if t.cursor == len(t.render)-1 {
 		return
 	}
@@ -168,9 +158,6 @@ func (t *TextField) CursorMoveLeft() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if len(t.render) == 0 {
-		return
-	}
 	if t.cursor == 0 {
 		return
 	}
@@ -182,9 +169,6 @@ func (t *TextField) CursorMoveRight() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if len(t.render) == 0 {
-		return
-	}
 	if t.cursor == len(t.render)-1 {
 		return
 	}
