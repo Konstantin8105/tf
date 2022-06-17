@@ -125,10 +125,6 @@ func (t *TextField) CursorMoveUp() {
 			t.cursor = c
 			return
 		}
-		// if t.render[t.cursor].row-2 == t.render[c].row {
-		// 	t.cursor = c - 1
-		// 	return
-		// }
 	}
 }
 
@@ -140,17 +136,7 @@ func (t *TextField) CursorMoveDown() {
 	if t.cursor == len(t.render)-1 {
 		return
 	}
-	for c := t.cursor + 1; c < len(t.render); c++ {
-		if t.render[t.cursor].row+1 == t.render[c].row &&
-			t.render[t.cursor].col <= t.render[c].col {
-			t.cursor = c
-			return
-		}
-		if t.render[t.cursor].row+2 == t.render[c].row {
-			t.cursor = c - 1
-			return
-		}
-	}
+	t.CursorPosition(t.render[t.cursor].row+1, t.render[t.cursor].col)
 }
 
 func (t *TextField) CursorMoveLeft() {
@@ -211,19 +197,41 @@ func (t *TextField) Insert(r rune) {
 		t.render = append([]position{{row: 0, col: 0, t: symbol}}, t.render...)
 		return
 	}
-	if t.render[t.cursor].t == endtext {
-		t.Text = append(t.Text, r)
-		var row, col uint
-		row = t.render[t.cursor].row
-		col = t.render[t.cursor].col + 1
-		t.render[len(t.render)-1].t = symbol // symbol rune is not valid
-		t.render = append(t.render, position{row: row, col: col, t: endtext})
-		return
-	}
+	symT := convert(r)
+	// 	var addrow uint = 0
+	// 	if symT == newline {
+	// 		addrow = 1
+	// 	}
+	// 	if t.render[t.cursor].t == endtext {
+	// 		fmt.Println("=====", addrow)
+	// 		t.Text = append(t.Text, r)
+	// 		var row, col uint
+	// 		row = t.render[t.cursor].row
+	// 		col = t.render[t.cursor].col
+	//
+	// 		if symT == newline {
+	// 			row += 1
+	// 			col = 0
+	// 		}
+	//
+	// 		t.render[len(t.render)-1].t = symT
+	// 		t.render[len(t.render)-1].row = row
+	// 		t.render = append(t.render, position{row: row, col: col+1, t: endtext})
+	// 		return
+	// 	}
 	t.Text = append(t.Text[:t.cursor], append([]rune{r}, t.Text[t.cursor:]...)...)
 	t.render = append(t.render[:t.cursor], append([]position{
-		position{row: 0, col: 0, t: symbol},
+		position{row: 0, col: 0, t: symT},
 	}, t.render[t.cursor:]...)...)
+}
+
+func convert(r rune) symType {
+	if r == '\n' {
+		return newline
+	} else if unicode.IsSpace(r) && r != ' ' {
+		return space
+	}
+	return symbol
 }
 
 func (t *TextField) KeyBackspace() {
@@ -279,7 +287,9 @@ func (t *TextField) Render(
 		case space:
 			drawer(t.render[p].row, t.render[p].col, '•')
 		case newline:
+			// drawer(t.render[p].row, t.render[p].col, '↵')
 		case endtext:
+			// drawer(t.render[p].row, t.render[p].col, 'X')
 		default:
 			panic(fmt.Errorf("undefined render symbol: %d", t.render[p].t))
 		}
@@ -287,6 +297,7 @@ func (t *TextField) Render(
 	if cursor != nil {
 		cursor(t.render[t.cursor].row, t.render[t.cursor].col)
 	}
+
 	return t.render[len(t.render)-1].row + 1
 }
 

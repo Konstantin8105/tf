@@ -407,15 +407,16 @@ func TestInsert(t *testing.T) {
 
 func TestCursor(t *testing.T) {
 	var width uint = 20
-	text := "1234\n12\n1234"
 	ta := TextField{}
 	tcs := []struct {
 		name   string
+		text   string
 		move   []func()
 		expect []string
 	}{
 		{
 			name: "Down",
+			text: "1234\n12\n1234",
 			move: []func(){
 				func() { ta.CursorPosition(0, 100) },
 				func() { ta.CursorMoveDown() },
@@ -429,6 +430,7 @@ func TestCursor(t *testing.T) {
 		},
 		{
 			name: "Up",
+			text: "1234\n12\n1234",
 			move: []func(){
 				func() { ta.CursorPosition(100, 100) },
 				func() { ta.CursorMoveUp() },
@@ -442,6 +444,7 @@ func TestCursor(t *testing.T) {
 		},
 		{
 			name: "Left",
+			text: "1234\n12\n1234",
 			move: []func(){
 				func() { ta.CursorPosition(1, 1) },
 				func() { ta.CursorMoveLeft() },
@@ -455,6 +458,7 @@ func TestCursor(t *testing.T) {
 		},
 		{
 			name: "Right",
+			text: "1234\n12\n1234",
 			move: []func(){
 				func() { ta.CursorPosition(1, 1) },
 				func() { ta.CursorMoveRight() },
@@ -468,6 +472,7 @@ func TestCursor(t *testing.T) {
 		},
 		{
 			name: "Insert",
+			text: "1234\n12\n1234",
 			move: []func(){
 				func() { ta.CursorPosition(1, 100) },
 				func() { ta.Insert('W') },
@@ -487,10 +492,36 @@ func TestCursor(t *testing.T) {
 				"1234\n12W\nW1234W█\n",
 			},
 		},
+		{
+			name: "Down2",
+			text: "123456\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.CursorMoveDown() },
+			},
+			expect: []string{
+				"123456█\n1234\n",
+				"123456\n1234█\n",
+			},
+		},
+		{
+			name: "Enter",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.Insert('\n') },
+				func() { ta.Insert('\n') },
+			},
+			expect: []string{
+				"123456█\n",
+				"123456\n█\n",
+				"123456\n\n█\n",
+			},
+		},
 	}
 	for i := range tcs {
 		t.Run(tcs[i].name, func(t *testing.T) {
-			ta.Text = []rune(text)
+			ta.Text = []rune(tcs[i].text)
 			ta.SetWidth(width)
 			if len(tcs[i].move) != len(tcs[i].expect) {
 				t.Errorf("not valid input data")
