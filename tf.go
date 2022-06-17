@@ -45,10 +45,10 @@ const (
 type symType uint8
 
 const (
-	symbol symType = iota
-	space
-	newline
-	endtext
+	symbol  symType = iota // 0
+	space                  // 1
+	newline                // 2
+	endtext                // 3
 )
 
 type position struct {
@@ -128,14 +128,14 @@ func (t *TextField) CursorMoveUp() {
 	}
 	for c := t.cursor - 1; 0 <= c; c-- {
 		if t.render[t.cursor].row-1 == t.render[c].row &&
-			t.render[t.cursor].col == t.render[c].col {
+			t.render[c].col <= t.render[t.cursor].col {
 			t.cursor = c
 			return
 		}
-		if t.render[t.cursor].row-2 == t.render[c].row {
-			t.cursor = c - 1
-			return
-		}
+		// if t.render[t.cursor].row-2 == t.render[c].row {
+		// 	t.cursor = c - 1
+		// 	return
+		// }
 	}
 }
 
@@ -152,7 +152,7 @@ func (t *TextField) CursorMoveDown() {
 	}
 	for c := t.cursor + 1; c < len(t.render); c++ {
 		if t.render[t.cursor].row+1 == t.render[c].row &&
-			t.render[t.cursor].col == t.render[c].col {
+			t.render[t.cursor].col <= t.render[c].col {
 			t.cursor = c
 			return
 		}
@@ -168,18 +168,13 @@ func (t *TextField) CursorMoveLeft() {
 	t.cursorInRect()
 	defer t.cursorInRect()
 	// action
-	if t.cursor == 0 {
-		return
-	}
 	if len(t.render) == 0 {
 		return
 	}
-	for 0 <= t.cursor-1 {
-		t.cursor--
-		if t.render[t.cursor].t != newline {
-			break
-		}
+	if t.cursor == 0 {
+		return
 	}
+	t.cursor--
 }
 
 func (t *TextField) CursorMoveRight() {
@@ -193,15 +188,7 @@ func (t *TextField) CursorMoveRight() {
 	if t.cursor == len(t.render)-1 {
 		return
 	}
-	for t.cursor+1 <= len(t.render)-1 {
-		t.cursor++
-		if t.render[t.cursor].t != newline {
-			break
-		}
-		if t.render[t.cursor].t != endtext {
-			break
-		}
-	}
+	t.cursor++
 }
 
 // func (t *TextField) CursorMoveHome() {
@@ -238,6 +225,15 @@ func (t *TextField) Insert(r rune) {
 	if t.cursor == 0 {
 		t.Text = append([]rune{r}, t.Text...)
 		t.render = append([]position{{row: 0, col: 0, t: symbol}}, t.render...)
+		return
+	}
+	if t.render[t.cursor].t == endtext {
+		t.Text = append(t.Text, r)
+		var row, col uint
+		row = t.render[t.cursor].row
+		col = t.render[t.cursor].col+1
+		t.render[len(t.render)-1].t = symbol // symbol rune is not valid
+		t.render = append(t.render,position{row: row, col: col, t: endtext})
 		return
 	}
 	t.Text = append(t.Text[:t.cursor], append([]rune{r}, t.Text[t.cursor:]...)...)
@@ -293,17 +289,16 @@ func (t *TextField) Render(
 	defer t.cursorInRect()
 	// action
 	for p := range t.render {
-		if t.render[p].t == endtext {
-			continue
-		}
-		if t.render[p].t == newline {
-			continue
-		}
-		if t.render[p].t == space {
+		switch t.render[p].t {
+		case symbol:
+			drawer(t.render[p].row, t.render[p].col, t.Text[p])
+		case space:
 			drawer(t.render[p].row, t.render[p].col, '•')
-			continue
+		case newline:
+		case endtext:
+		default:
+			panic(fmt.Errorf("undefined render symbol: %d", t.render[p].t))
 		}
-		drawer(t.render[p].row, t.render[p].col, t.Text[p])
 	}
 	if cursor != nil {
 		cursor(t.render[t.cursor].row, t.render[t.cursor].col)
@@ -384,8 +379,8 @@ func (t *TextField) SetWidth(width uint) {
 	if row != 0 {
 		row -= 1
 	}
-	if col != 0 {
-		col -= 1
-	}
+	// 	if col != 0 {
+	// 		col -= 1
+	// 	}
 	t.render = append(t.render, position{row: row, col: col, t: endtext})
 }
