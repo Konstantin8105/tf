@@ -518,6 +518,48 @@ func TestCursor(t *testing.T) {
 				"123456\n\n█\n",
 			},
 		},
+		{
+			name: "Backspace",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.KeyBackspace() },
+				func() { ta.KeyBackspace() },
+			},
+			expect: []string{
+				"123456█\n",
+				"12345█\n",
+				"1234█\n",
+			},
+		},
+		{
+			name: "Backspace2",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 3) },
+				func() { ta.KeyBackspace() },
+				func() { ta.KeyBackspace() },
+			},
+			expect: []string{
+				"123█56\n",
+				"12█56\n",
+				"1█56\n",
+			},
+		},
+		{
+			name: "Del",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 0) },
+				func() { ta.KeyDel() },
+				func() { ta.KeyDel() },
+			},
+			expect: []string{
+				"█23456\n",
+				"█3456\n",
+				"█456\n",
+			},
+		},
 	}
 	for i := range tcs {
 		t.Run(tcs[i].name, func(t *testing.T) {
