@@ -2,7 +2,6 @@ package tf
 
 import (
 	"fmt"
-	"math"
 	"unicode"
 )
 
@@ -323,60 +322,21 @@ func (t *TextField) SetWidth(width uint) {
 	defer func() {
 		t.NoUpdate = false
 	}()
-	// prepare render
+	// prepare render types
 	t.render = make([]position, len(t.Text))
-	{
-		var wrong uint = math.MaxUint
-		for i := range t.render {
-			t.render[i].row = wrong
-			t.render[i].col = wrong
-		}
-		defer func() {
-			for i := range t.render {
-				if t.render[i].row == wrong || t.render[i].col == wrong {
-					panic(fmt.Errorf("not valid render: %#v", t.render))
-				}
-			}
-		}()
+	for i := range t.Text {
+		t.render[i].t = convert(t.Text[i])
 	}
-
-	pos := 0
-	var row uint = 0
-	var col uint = 0
-	for iter := 0; ; iter++ {
-		if len(t.Text) <= pos {
-			break
-		}
-		col = 0
-		for ; pos < len(t.Text); pos++ {
-			// render
-			t.render[pos] = position{row: row, col: col}
-			//
-			if t.Text[pos] == '\n' {
-				t.render[pos].t = newline
-				pos++
-				break
-			}
-			if unicode.IsSpace(t.Text[pos]) && t.Text[pos] != ' ' {
-				t.render[pos].t = space
-				// pos++
-				// break
-			}
-			if col == width {
-				break
-			}
-			col++
-		}
-		row++
-		if maxIterations < iter {
-			panic(fmt.Errorf("iterations: %d. `%s` %#v", iter, string(t.Text), t))
+	// render rows, cols calculations
+	var row, col uint
+	for i := range t.Text {
+		t.render[i].row = row
+		t.render[i].col = col
+		col++
+		if t.render[i].t == newline || col == width {
+			row++
+			col = 0
 		}
 	}
-	if row != 0 {
-		row -= 1
-	}
-	// 	if col != 0 {
-	// 		col -= 1
-	// 	}
 	t.render = append(t.render, position{row: row, col: col, t: endtext})
 }
