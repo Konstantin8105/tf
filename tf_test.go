@@ -3,6 +3,7 @@ package tf
 import (
 	"bytes"
 	"fmt"
+	"strings"
 	"testing"
 )
 
@@ -579,6 +580,12 @@ func TestCursor(t *testing.T) {
 				if actual != tcs[i].expect[p] {
 					t.Errorf("Step %2d\nresult is not same:\nActual:\n%s\nExpect:\n%s",
 						p, actual, tcs[i].expect[p])
+				}
+				// check height of render
+				h := int(ta.GetRenderHeight())
+				eh := strings.Count(tcs[i].expect[p], "\n")
+				if h != eh {
+					t.Errorf("not valid height of render: %d != %d", h, eh)
 				}
 			}
 		})
