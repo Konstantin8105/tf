@@ -342,5 +342,9 @@ func (t *TextField) SetWidth(width uint) {
 }
 
 func (t *TextField) GetRenderHeight() uint {
-	return uint(len(t.render))
+	last := len(t.render) - 2 // for avoid endtext
+	if last < 0 {
+		return 0
+	}
+	return t.render[last].row
 }
