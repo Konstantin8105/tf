@@ -414,6 +414,7 @@ func TestCursor(t *testing.T) {
 		text   string
 		move   []func()
 		expect []string
+		eWidth []int
 	}{
 		{
 			name: "Down",
@@ -428,6 +429,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12█\n1234\n",
 				"1234\n12\n12█4\n",
 			},
+			eWidth: []int{4,4,4},
 		},
 		{
 			name: "Up",
@@ -442,6 +444,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12█\n1234\n",
 				"12█4\n12\n1234\n",
 			},
+			eWidth: []int{4,4,4},
 		},
 		{
 			name: "Left",
@@ -456,6 +459,7 @@ func TestCursor(t *testing.T) {
 				"1234\n█2\n1234\n",
 				"1234█\n12\n1234\n",
 			},
+			eWidth: []int{4,4,4},
 		},
 		{
 			name: "Right",
@@ -470,6 +474,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12█\n1234\n",
 				"1234\n12\n█234\n",
 			},
+			eWidth: []int{4,4,4},
 		},
 		{
 			name: "Insert",
@@ -492,6 +497,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12W\nW1234█\n",
 				"1234\n12W\nW1234W█\n",
 			},
+			eWidth: []int{4,4,4,5,5,5,6},
 		},
 		{
 			name: "Down2",
@@ -504,6 +510,7 @@ func TestCursor(t *testing.T) {
 				"123456█\n1234\n",
 				"123456\n1234█\n",
 			},
+			eWidth: []int{6,6},
 		},
 		{
 			name: "Enter",
@@ -518,6 +525,7 @@ func TestCursor(t *testing.T) {
 				"123456\n█\n",
 				"123456\n\n█\n",
 			},
+			eWidth: []int{6,6,6},
 		},
 		{
 			name: "Backspace",
@@ -532,6 +540,7 @@ func TestCursor(t *testing.T) {
 				"12345█\n",
 				"1234█\n",
 			},
+			eWidth: []int{6,5,4},
 		},
 		{
 			name: "Backspace2",
@@ -546,6 +555,7 @@ func TestCursor(t *testing.T) {
 				"12█56\n",
 				"1█56\n",
 			},
+			eWidth: []int{6,5,4},
 		},
 		{
 			name: "Del",
@@ -560,6 +570,7 @@ func TestCursor(t *testing.T) {
 				"█3456\n",
 				"█456\n",
 			},
+			eWidth: []int{6,5,4},
 		},
 	}
 	for i := range tcs {
@@ -586,6 +597,12 @@ func TestCursor(t *testing.T) {
 				eh := strings.Count(tcs[i].expect[p], "\n")
 				if h != eh {
 					t.Errorf("not valid height of render: %d != %d", h, eh)
+				}
+				// check width of render
+				actualSize := int(ta.GetRenderWidth())
+				if actualSize != tcs[i].eWidth[p] {
+					t.Errorf("not valid width of render: %d != %d",
+						actualSize, tcs[i].eWidth[p])
 				}
 			}
 		})
