@@ -359,3 +359,13 @@ func (t *TextField) GetRenderHeight() uint {
 	}
 	return t.render[last].row + 1
 }
+
+func (t *TextField) GetRenderWidth() uint {
+	w := uint(1)
+	for i := range t.render {
+		if w < t.render[i].col {
+			w = t.render[i].col
+		}
+	}
+	return w
+}
