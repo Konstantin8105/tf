@@ -322,8 +322,19 @@ func (t *TextField) SetWidth(width uint) {
 	defer func() {
 		t.NoUpdate = false
 	}()
+	// allocation
+	{
+		// last is endtext
+		size := len(t.Text) + 1
+		if size < len(t.render) {
+			t.render = t.render[:size]
+		}
+		if size != len(t.render) {
+			t.render = make([]position, size)
+		}
+	}
+
 	// prepare render types
-	t.render = make([]position, len(t.Text))
 	for i := range t.Text {
 		t.render[i].t = convert(t.Text[i])
 	}
@@ -338,7 +349,7 @@ func (t *TextField) SetWidth(width uint) {
 			col = 0
 		}
 	}
-	t.render = append(t.render, position{row: row, col: col, t: endtext})
+	t.render[len(t.render)-1] = position{row: row, col: col, t: endtext}
 }
 
 func (t *TextField) GetRenderHeight() uint {
