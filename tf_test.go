@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"strings"
+	"sync"
 	"testing"
 )
 
@@ -429,7 +430,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12█\n1234\n",
 				"1234\n12\n12█4\n",
 			},
-			eWidth: []int{4,4,4},
+			eWidth: []int{4, 4, 4},
 		},
 		{
 			name: "Up",
@@ -444,7 +445,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12█\n1234\n",
 				"12█4\n12\n1234\n",
 			},
-			eWidth: []int{4,4,4},
+			eWidth: []int{4, 4, 4},
 		},
 		{
 			name: "Left",
@@ -459,7 +460,7 @@ func TestCursor(t *testing.T) {
 				"1234\n█2\n1234\n",
 				"1234█\n12\n1234\n",
 			},
-			eWidth: []int{4,4,4},
+			eWidth: []int{4, 4, 4},
 		},
 		{
 			name: "Right",
@@ -474,7 +475,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12█\n1234\n",
 				"1234\n12\n█234\n",
 			},
-			eWidth: []int{4,4,4},
+			eWidth: []int{4, 4, 4},
 		},
 		{
 			name: "Insert",
@@ -497,7 +498,7 @@ func TestCursor(t *testing.T) {
 				"1234\n12W\nW1234█\n",
 				"1234\n12W\nW1234W█\n",
 			},
-			eWidth: []int{4,4,4,5,5,5,6},
+			eWidth: []int{4, 4, 4, 5, 5, 5, 6},
 		},
 		{
 			name: "Down2",
@@ -510,7 +511,7 @@ func TestCursor(t *testing.T) {
 				"123456█\n1234\n",
 				"123456\n1234█\n",
 			},
-			eWidth: []int{6,6},
+			eWidth: []int{6, 6},
 		},
 		{
 			name: "Enter",
@@ -525,7 +526,7 @@ func TestCursor(t *testing.T) {
 				"123456\n█\n",
 				"123456\n\n█\n",
 			},
-			eWidth: []int{6,6,6},
+			eWidth: []int{6, 6, 6},
 		},
 		{
 			name: "Backspace",
@@ -540,7 +541,7 @@ func TestCursor(t *testing.T) {
 				"12345█\n",
 				"1234█\n",
 			},
-			eWidth: []int{6,5,4},
+			eWidth: []int{6, 5, 4},
 		},
 		{
 			name: "Backspace2",
@@ -555,7 +556,7 @@ func TestCursor(t *testing.T) {
 				"12█56\n",
 				"1█56\n",
 			},
-			eWidth: []int{6,5,4},
+			eWidth: []int{6, 5, 4},
 		},
 		{
 			name: "Del",
@@ -570,7 +571,7 @@ func TestCursor(t *testing.T) {
 				"█3456\n",
 				"█456\n",
 			},
-			eWidth: []int{6,5,4},
+			eWidth: []int{6, 5, 4},
 		},
 	}
 	for i := range tcs {
@@ -607,4 +608,40 @@ func TestCursor(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestSet(t *testing.T) {
+	var largetext string = "some text"
+	for i := 0; i < 8; i++ {
+		largetext += largetext
+	}
+
+	var wg sync.WaitGroup
+	wg.Add(3)
+	ta := TextField{}
+	go func() {
+		for i := range largetext {
+			ta.Text = []rune(largetext[:i])
+		}
+		for i := len(largetext) - 1; 0 <= i; i-- {
+			ta.Text = []rune(largetext[:i])
+		}
+		wg.Done()
+	}()
+	go func() {
+		size := len(largetext) * 10
+		for i := 0; i < size; i++ {
+			ta.SetWidth(6)
+		}
+		wg.Done()
+	}()
+	go func() {
+		size := len(largetext) * 10
+		for i := 0; i < size; i++ {
+			ta.SetWidth(10)
+		}
+		wg.Done()
+	}()
+	t.Logf("lenght: %d", len(largetext))
+	wg.Wait()
 }

@@ -304,7 +304,15 @@ func (t *TextField) Render(
 //
 // runes '\t', '\v', '\f', '\r', U+0085 (NEL), U+00A0 (NBSP) are iterpreted as '\n'.
 //
+// function is panic free.
 func (t *TextField) SetWidth(width uint) {
+	defer func() {
+		if r := recover(); r != nil {
+			// Ignore panic, because to fast changes not important result.
+			// By default updating after at the next screen update.
+			// All race problem shall be solve outside of that package.
+		}
+	}()
 	// Minimal width of text is:
 	// 1 symbol - rune
 	// 2 symbol - cursor
@@ -322,10 +330,11 @@ func (t *TextField) SetWidth(width uint) {
 	defer func() {
 		t.NoUpdate = false
 	}()
+	text := t.Text // locale variable for minimaze panic problems
 	// allocation
 	{
 		// last is endtext
-		size := len(t.Text) + 1
+		size := len(text) + 1
 		if size < len(t.render) {
 			t.render = t.render[:size]
 		}
@@ -335,12 +344,12 @@ func (t *TextField) SetWidth(width uint) {
 	}
 
 	// prepare render types
-	for i := range t.Text {
-		t.render[i].t = convert(t.Text[i])
+	for i := range text {
+		t.render[i].t = convert(text[i])
 	}
 	// render rows, cols calculations
 	var row, col uint
-	for i := range t.Text {
+	for i := range text {
 		t.render[i].row = row
 		t.render[i].col = col
 		col++
