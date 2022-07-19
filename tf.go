@@ -275,6 +275,13 @@ func (t *TextField) Render(
 	drawer func(row, col uint, r rune),
 	cursor func(row, col uint),
 ) (height uint) {
+	defer func() {
+		if r := recover(); r != nil {
+			// Ignore panic, because to fast changes not important result.
+			// By default updating after at the next screen update.
+			// All race problem shall be solve outside of that package.
+		}
+	}()
 	// cursor correction
 	t.cursorInRect()
 	defer t.cursorInRect()
