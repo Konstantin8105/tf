@@ -385,3 +385,74 @@ func (t *TextField) GetRenderWidth() uint {
 	}
 	return w
 }
+
+type TextFieldLimit struct {
+	TextField
+
+	limitLines uint
+}
+
+func (t *TextFieldLimit) SetLinesLimit(lines uint) {
+	t.limitLines = lines
+}
+
+func (t *TextFieldLimit) Render(
+	drawer func(row, col uint, r rune),
+	cursor func(row, col uint),
+) (height uint) {
+	defer func() {
+		if r := recover(); r != nil {
+			// Ignore panic, because to fast changes not important result.
+			// By default updating after at the next screen update.
+			// All race problem shall be solve outside of that package.
+		}
+	}()
+	offset := uint(0)
+	if t.limitLines < t.render[t.cursor].row+1 {
+		offset = t.render[t.cursor].row + 1 - t.limitLines
+	}
+	draw := func(row, col uint, r rune) {
+		if offset == 0 {
+			if t.limitLines <= row {
+				return
+			}
+			drawer(row, col, r)
+			return
+		}
+		if row < offset {
+			return
+		}
+		if offset+t.limitLines <= row {
+			return
+		}
+		drawer(row-offset, col, r)
+	}
+	var cur func(row, col uint)
+	if cursor != nil {
+		cur = func(row, col uint) {
+			if offset == 0 {
+				if t.limitLines <= row {
+					return
+				}
+				cursor(row, col)
+				return
+			}
+			if row < offset {
+				return
+			}
+			if offset+t.limitLines <= row {
+				return
+			}
+			cursor(row-offset, col)
+		}
+	}
+	height = t.TextField.Render(draw, cur)
+	if t.limitLines < height {
+		height = t.limitLines
+	}
+	return
+}
+
+func (t *TextFieldLimit) GetRenderHeight() uint {
+	return t.limitLines
+}

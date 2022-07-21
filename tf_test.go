@@ -645,3 +645,207 @@ func TestSet(t *testing.T) {
 	t.Logf("lenght: %d", len(largetext))
 	wg.Wait()
 }
+
+func TestSingleLine(t *testing.T) {
+	var width uint = 8
+	ta := TextFieldLimit{}
+	ta.SetLinesLimit(1)
+	tcs := []struct {
+		name   string
+		text   string
+		move   []func()
+		expect []string
+		eWidth []int
+	}{
+		{
+			name: "Down",
+			text: "1234\n12\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.CursorMoveDown() },
+				func() { ta.CursorMoveDown() },
+			},
+			expect: []string{
+				"1234█\n", // 0
+				"12█\n",   // 1
+				"12█4\n",  // 2
+			},
+			eWidth: []int{4, 4, 4},
+		},
+		{
+			name: "Up",
+			text: "1234\n12\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(100, 100) },
+				func() { ta.CursorMoveUp() },
+				func() { ta.CursorMoveUp() },
+			},
+			expect: []string{
+				"1234█\n",
+				"12█\n",
+				"12█4\n",
+			},
+			eWidth: []int{4, 4, 4},
+		},
+		{
+			name: "Left",
+			text: "1234\n12\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(1, 1) },
+				func() { ta.CursorMoveLeft() },
+				func() { ta.CursorMoveLeft() },
+			},
+			expect: []string{
+				"1█\n",
+				"█2\n",
+				"1234█\n",
+			},
+			eWidth: []int{4, 4, 4},
+		},
+		{
+			name: "Right",
+			text: "1234\n12\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(1, 1) },
+				func() { ta.CursorMoveRight() },
+				func() { ta.CursorMoveRight() },
+			},
+			expect: []string{
+				"1█\n",
+				"12█\n",
+				"█234\n",
+			},
+			eWidth: []int{4, 4, 4},
+		},
+		{
+			name: "Insert",
+			text: "1234\n12\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(1, 100) },
+				func() { ta.Insert('W') },
+				func() { ta.CursorMoveRight() },
+				func() { ta.Insert('W') },
+				func() { ta.CursorPosition(100, 100) },
+				func() { ta.CursorMoveRight() },
+				func() { ta.Insert('W') },
+			},
+			expect: []string{
+				"12█\n",
+				"12W█\n",
+				"█234\n",
+				"W█234\n",
+				"W1234█\n",
+				"W1234█\n",
+				"W1234W█\n",
+			},
+			eWidth: []int{4, 4, 4, 5, 5, 5, 6},
+		},
+		{
+			name: "Down2",
+			text: "123456\n1234",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.CursorMoveDown() },
+			},
+			expect: []string{
+				"123456█\n",
+				"1234█\n",
+			},
+			eWidth: []int{6, 6},
+		},
+		{
+			name: "Enter",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.Insert('\n') },
+				func() { ta.Insert('\n') },
+			},
+			expect: []string{
+				"123456█\n",
+				"█\n",
+				"█\n",
+			},
+			eWidth: []int{6, 6, 6},
+		},
+		{
+			name: "Backspace",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 100) },
+				func() { ta.KeyBackspace() },
+				func() { ta.KeyBackspace() },
+			},
+			expect: []string{
+				"123456█\n",
+				"12345█\n",
+				"1234█\n",
+			},
+			eWidth: []int{6, 5, 4},
+		},
+		{
+			name: "Backspace2",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 3) },
+				func() { ta.KeyBackspace() },
+				func() { ta.KeyBackspace() },
+			},
+			expect: []string{
+				"123█56\n",
+				"12█56\n",
+				"1█56\n",
+			},
+			eWidth: []int{6, 5, 4},
+		},
+		{
+			name: "Del",
+			text: "123456",
+			move: []func(){
+				func() { ta.CursorPosition(0, 0) },
+				func() { ta.KeyDel() },
+				func() { ta.KeyDel() },
+			},
+			expect: []string{
+				"█23456\n",
+				"█3456\n",
+				"█456\n",
+			},
+			eWidth: []int{6, 5, 4},
+		},
+	}
+	for i := range tcs {
+		t.Run(tcs[i].name, func(t *testing.T) {
+			ta.Text = []rune(tcs[i].text)
+			ta.SetWidth(width)
+			if len(tcs[i].move) != len(tcs[i].expect) {
+				t.Errorf("not valid input data")
+			}
+			for p := range tcs[i].move {
+				tcs[i].move[p]()
+				if !ta.NoUpdate {
+					ta.SetWidth(width)
+				}
+				var b Buffer
+				ta.Render(b.Drawer, b.Cursor)
+				actual := b.Text()
+				if actual != tcs[i].expect[p] {
+					t.Errorf("Step %2d\nresult is not same:\nActual:\n%s\nExpect:\n%s",
+						p, actual, tcs[i].expect[p])
+				}
+				// check height of render
+				h := int(ta.GetRenderHeight())
+				eh := strings.Count(tcs[i].expect[p], "\n")
+				if h != eh {
+					t.Errorf("not valid height of render: %d != %d", h, eh)
+				}
+				// check width of render
+				actualSize := int(ta.GetRenderWidth())
+				if actualSize != tcs[i].eWidth[p] {
+					t.Errorf("not valid width of render: %d != %d",
+						actualSize, tcs[i].eWidth[p])
+				}
+			}
+		})
+	}
+}
