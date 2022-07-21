@@ -407,6 +407,10 @@ func (t *TextFieldLimit) Render(
 			// All race problem shall be solve outside of that package.
 		}
 	}()
+	if t.limitLines == 0 {
+		return t.TextField.Render(drawer, cursor)
+	}
+
 	offset := uint(0)
 	if t.limitLines < t.render[t.cursor].row+1 {
 		offset = t.render[t.cursor].row + 1 - t.limitLines
@@ -454,5 +458,8 @@ func (t *TextFieldLimit) Render(
 }
 
 func (t *TextFieldLimit) GetRenderHeight() uint {
+	if t.limitLines == 0 {
+		return t.TextField.GetRenderHeight()
+	}
 	return t.limitLines
 }
