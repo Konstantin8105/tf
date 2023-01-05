@@ -368,7 +368,12 @@ func (t *TextField) SetWidth(width uint) {
 	t.render[len(t.render)-1] = position{row: row, col: col, t: endtext}
 }
 
-func (t *TextField) GetRenderHeight() uint {
+func (t *TextField) GetRenderHeight() (h uint) {
+	defer func() {
+		if h == 0 {
+			h = 1
+		}
+	}()
 	last := len(t.render) - 1
 	if last < 0 {
 		return 0
@@ -457,7 +462,12 @@ func (t *TextFieldLimit) Render(
 	return
 }
 
-func (t *TextFieldLimit) GetRenderHeight() uint {
+func (t *TextFieldLimit) GetRenderHeight() (h uint) {
+	defer func() {
+		if h == 0 {
+			h = 1
+		}
+	}()
 	if t.limitLines == 0 {
 		return t.TextField.GetRenderHeight()
 	}
