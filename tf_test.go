@@ -409,21 +409,20 @@ func TestInsert(t *testing.T) {
 
 func TestCursor(t *testing.T) {
 	var width uint = 20
-	ta := TextField{}
 	tcs := []struct {
 		name   string
 		text   string
-		move   []func()
+		move   []func(fake)
 		expect []string
 		eWidth []int
 	}{
 		{
 			name: "Down",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.CursorMoveDown() },
-				func() { ta.CursorMoveDown() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.CursorMoveDown() },
+				func(ta fake) { ta.CursorMoveDown() },
 			},
 			expect: []string{
 				"1234█\n12\n1234\n",
@@ -435,10 +434,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Up",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(100, 100) },
-				func() { ta.CursorMoveUp() },
-				func() { ta.CursorMoveUp() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(100, 100) },
+				func(ta fake) { ta.CursorMoveUp() },
+				func(ta fake) { ta.CursorMoveUp() },
 			},
 			expect: []string{
 				"1234\n12\n1234█\n",
@@ -450,10 +449,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Left",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(1, 1) },
-				func() { ta.CursorMoveLeft() },
-				func() { ta.CursorMoveLeft() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(1, 1) },
+				func(ta fake) { ta.CursorMoveLeft() },
+				func(ta fake) { ta.CursorMoveLeft() },
 			},
 			expect: []string{
 				"1234\n1█\n1234\n",
@@ -465,10 +464,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Right",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(1, 1) },
-				func() { ta.CursorMoveRight() },
-				func() { ta.CursorMoveRight() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(1, 1) },
+				func(ta fake) { ta.CursorMoveRight() },
+				func(ta fake) { ta.CursorMoveRight() },
 			},
 			expect: []string{
 				"1234\n1█\n1234\n",
@@ -480,14 +479,14 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Insert",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(1, 100) },
-				func() { ta.Insert('W') },
-				func() { ta.CursorMoveRight() },
-				func() { ta.Insert('W') },
-				func() { ta.CursorPosition(100, 100) },
-				func() { ta.CursorMoveRight() },
-				func() { ta.Insert('W') },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(1, 100) },
+				func(ta fake) { ta.Insert('W') },
+				func(ta fake) { ta.CursorMoveRight() },
+				func(ta fake) { ta.Insert('W') },
+				func(ta fake) { ta.CursorPosition(100, 100) },
+				func(ta fake) { ta.CursorMoveRight() },
+				func(ta fake) { ta.Insert('W') },
 			},
 			expect: []string{
 				"1234\n12█\n1234\n",
@@ -503,9 +502,9 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Down2",
 			text: "123456\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.CursorMoveDown() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.CursorMoveDown() },
 			},
 			expect: []string{
 				"123456█\n1234\n",
@@ -516,10 +515,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Enter",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.Insert('\n') },
-				func() { ta.Insert('\n') },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.Insert('\n') },
+				func(ta fake) { ta.Insert('\n') },
 			},
 			expect: []string{
 				"123456█\n",
@@ -531,10 +530,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Backspace",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.KeyBackspace() },
-				func() { ta.KeyBackspace() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.KeyBackspace() },
+				func(ta fake) { ta.KeyBackspace() },
 			},
 			expect: []string{
 				"123456█\n",
@@ -546,10 +545,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Backspace2",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 3) },
-				func() { ta.KeyBackspace() },
-				func() { ta.KeyBackspace() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 3) },
+				func(ta fake) { ta.KeyBackspace() },
+				func(ta fake) { ta.KeyBackspace() },
 			},
 			expect: []string{
 				"123█56\n",
@@ -561,10 +560,10 @@ func TestCursor(t *testing.T) {
 		{
 			name: "Del",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 0) },
-				func() { ta.KeyDel() },
-				func() { ta.KeyDel() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 0) },
+				func(ta fake) { ta.KeyDel() },
+				func(ta fake) { ta.KeyDel() },
 			},
 			expect: []string{
 				"█23456\n",
@@ -576,16 +575,14 @@ func TestCursor(t *testing.T) {
 	}
 	for i := range tcs {
 		t.Run(tcs[i].name, func(t *testing.T) {
+			ta := TextField{}
 			ta.Text = []rune(tcs[i].text)
 			ta.SetWidth(width)
 			if len(tcs[i].move) != len(tcs[i].expect) {
 				t.Errorf("not valid input data")
 			}
 			for p := range tcs[i].move {
-				tcs[i].move[p]()
-				if !ta.NoUpdate {
-					ta.SetWidth(width)
-				}
+				tcs[i].move[p](&ta)
 				var b Buffer
 				ta.Render(b.Drawer, b.Cursor)
 				actual := b.Text()
@@ -646,24 +643,34 @@ func TestSet(t *testing.T) {
 	wg.Wait()
 }
 
+type fake interface {
+	CursorPosition(row, col uint)
+	CursorMoveUp()
+	CursorMoveDown()
+	CursorMoveLeft()
+	CursorMoveRight()
+
+	Insert(r rune)
+	KeyBackspace()
+	KeyDel()
+}
+
 func TestSingleLine(t *testing.T) {
 	var width uint = 8
-	ta := TextFieldLimit{}
-	ta.SetLinesLimit(1)
 	tcs := []struct {
 		name   string
 		text   string
-		move   []func()
+		move   []func(fake)
 		expect []string
 		eWidth []int
 	}{
 		{
 			name: "Down",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.CursorMoveDown() },
-				func() { ta.CursorMoveDown() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.CursorMoveDown() },
+				func(ta fake) { ta.CursorMoveDown() },
 			},
 			expect: []string{
 				"1234█\n", // 0
@@ -675,10 +682,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Up",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(100, 100) },
-				func() { ta.CursorMoveUp() },
-				func() { ta.CursorMoveUp() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(100, 100) },
+				func(ta fake) { ta.CursorMoveUp() },
+				func(ta fake) { ta.CursorMoveUp() },
 			},
 			expect: []string{
 				"1234█\n",
@@ -690,10 +697,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Left",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(1, 1) },
-				func() { ta.CursorMoveLeft() },
-				func() { ta.CursorMoveLeft() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(1, 1) },
+				func(ta fake) { ta.CursorMoveLeft() },
+				func(ta fake) { ta.CursorMoveLeft() },
 			},
 			expect: []string{
 				"1█\n",
@@ -705,10 +712,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Right",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(1, 1) },
-				func() { ta.CursorMoveRight() },
-				func() { ta.CursorMoveRight() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(1, 1) },
+				func(ta fake) { ta.CursorMoveRight() },
+				func(ta fake) { ta.CursorMoveRight() },
 			},
 			expect: []string{
 				"1█\n",
@@ -720,14 +727,14 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Insert",
 			text: "1234\n12\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(1, 100) },
-				func() { ta.Insert('W') },
-				func() { ta.CursorMoveRight() },
-				func() { ta.Insert('W') },
-				func() { ta.CursorPosition(100, 100) },
-				func() { ta.CursorMoveRight() },
-				func() { ta.Insert('W') },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(1, 100) },
+				func(ta fake) { ta.Insert('W') },
+				func(ta fake) { ta.CursorMoveRight() },
+				func(ta fake) { ta.Insert('W') },
+				func(ta fake) { ta.CursorPosition(100, 100) },
+				func(ta fake) { ta.CursorMoveRight() },
+				func(ta fake) { ta.Insert('W') },
 			},
 			expect: []string{
 				"12█\n",
@@ -743,9 +750,9 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Down2",
 			text: "123456\n1234",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.CursorMoveDown() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.CursorMoveDown() },
 			},
 			expect: []string{
 				"123456█\n",
@@ -756,10 +763,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Enter",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.Insert('\n') },
-				func() { ta.Insert('\n') },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.Insert('\n') },
+				func(ta fake) { ta.Insert('\n') },
 			},
 			expect: []string{
 				"123456█\n",
@@ -771,10 +778,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Backspace",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 100) },
-				func() { ta.KeyBackspace() },
-				func() { ta.KeyBackspace() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 100) },
+				func(ta fake) { ta.KeyBackspace() },
+				func(ta fake) { ta.KeyBackspace() },
 			},
 			expect: []string{
 				"123456█\n",
@@ -786,10 +793,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Backspace2",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 3) },
-				func() { ta.KeyBackspace() },
-				func() { ta.KeyBackspace() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 3) },
+				func(ta fake) { ta.KeyBackspace() },
+				func(ta fake) { ta.KeyBackspace() },
 			},
 			expect: []string{
 				"123█56\n",
@@ -801,10 +808,10 @@ func TestSingleLine(t *testing.T) {
 		{
 			name: "Del",
 			text: "123456",
-			move: []func(){
-				func() { ta.CursorPosition(0, 0) },
-				func() { ta.KeyDel() },
-				func() { ta.KeyDel() },
+			move: []func(fake){
+				func(ta fake) { ta.CursorPosition(0, 0) },
+				func(ta fake) { ta.KeyDel() },
+				func(ta fake) { ta.KeyDel() },
 			},
 			expect: []string{
 				"█23456\n",
@@ -816,22 +823,24 @@ func TestSingleLine(t *testing.T) {
 	}
 	for i := range tcs {
 		t.Run(tcs[i].name, func(t *testing.T) {
+			ta := TextFieldLimit{}
+			ta.SetLinesLimit(1)
 			ta.Text = []rune(tcs[i].text)
 			ta.SetWidth(width)
 			if len(tcs[i].move) != len(tcs[i].expect) {
 				t.Errorf("not valid input data")
 			}
 			for p := range tcs[i].move {
-				tcs[i].move[p]()
-				if !ta.NoUpdate {
-					ta.SetWidth(width)
-				}
+				t.Logf("Step %2d", p)
+				tcs[i].move[p](&ta)
 				var b Buffer
 				ta.Render(b.Drawer, b.Cursor)
 				actual := b.Text()
 				if actual != tcs[i].expect[p] {
-					t.Errorf("Step %2d\nresult is not same:\nActual:\n%s\nExpect:\n%s",
-						p, actual, tcs[i].expect[p])
+					t.Errorf("result is not same:\nActual:\n%s\nExpect:\n%s",
+						actual, tcs[i].expect[p])
+				} else {
+					t.Logf("%s", actual)
 				}
 				// check height of render
 				h := int(ta.GetRenderHeight())
@@ -858,6 +867,11 @@ func TestSingleLine(t *testing.T) {
 // Benchmark/Width-0637-0100-4          	  151008	      7783 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RWNoChange-0637-0100-4     	  118446	     10170 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RWChanged-0637-0100-4      	  116136	     10214 ns/op	       0 B/op	       0 allocs/op
+//
+// Benchmark/Render-0637-0100-4         	  477376	      2455 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/Width-0637-0100-4          	315199640	         3.960 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWNoChange-0637-0100-4     	  485542	      2515 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWChanged-0637-0100-4      	  115099	     10328 ns/op	       0 B/op	       0 allocs/op
 func Benchmark(b *testing.B) {
 	var str []rune
 	for ti := range txts {

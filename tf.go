@@ -59,9 +59,14 @@ type TextField struct {
 	cursor int        // cursor position in render slice
 	render []position // text in screen system coordinate
 
-	Text     []rune
-	Filter   func(r rune) (insert bool)
-	NoUpdate bool
+	Text   []rune
+	Filter func(r rune) (insert bool)
+
+	state struct {
+		init           bool
+		changedContent bool
+		width          uint
+	}
 }
 
 func (t *TextField) cursorInRect() {
@@ -189,7 +194,7 @@ func (t *TextField) Insert(r rune) {
 	// Is need update?
 	defer func() {
 		t.cursor++
-		t.NoUpdate = false
+		t.state.changedContent = true
 	}()
 	if t.cursor == 0 {
 		t.Text = append([]rune{r}, t.Text...)
@@ -246,7 +251,7 @@ func (t *TextField) KeyBackspace() {
 	}
 	// Is need update?
 	defer func() {
-		t.NoUpdate = false
+		t.state.changedContent = true
 	}()
 	t.Text = append(t.Text[:t.cursor-1], t.Text[t.cursor:]...)
 	t.cursor--
@@ -262,7 +267,7 @@ func (t *TextField) KeyDel() {
 	}
 	// Is need update?
 	defer func() {
-		t.NoUpdate = false
+		t.state.changedContent = true
 	}()
 	if len(t.render) == t.cursor+1 {
 		// nothing to do
@@ -275,6 +280,10 @@ func (t *TextField) Render(
 	drawer func(row, col uint, r rune),
 	cursor func(row, col uint),
 ) (height uint) {
+	if !t.state.init || t.state.changedContent {
+		t.updateWidth()
+		t.state.init = true
+	}
 	defer func() {
 		if r := recover(); r != nil {
 			// Ignore panic, because to fast changes not important result.
@@ -313,7 +322,25 @@ func (t *TextField) Render(
 //
 // function is panic free.
 func (t *TextField) SetWidth(width uint) {
+	if !t.state.init {
+		t.state.width = width
+		t.updateWidth()
+		t.state.init = true
+	}
+	if width == t.state.width {
+		return
+	}
+	t.state.width = width
+	t.state.changedContent = true
+}
+
+func (t *TextField) updateWidth() {
+	if t.state.init && !t.state.changedContent {
+		return
+	}
+	width := t.state.width
 	defer func() {
+		t.state.changedContent = false
 		if r := recover(); r != nil {
 			// Ignore panic, because to fast changes not important result.
 			// By default updating after at the next screen update.
@@ -330,13 +357,6 @@ func (t *TextField) SetWidth(width uint) {
 	}
 	// change width for cursor place
 	width -= 1
-	// update text
-	if t.NoUpdate {
-		return
-	}
-	defer func() {
-		t.NoUpdate = false
-	}()
 	text := t.Text // locale variable for minimaze panic problems
 	// allocation
 	{
@@ -405,6 +425,10 @@ func (t *TextFieldLimit) Render(
 	drawer func(row, col uint, r rune),
 	cursor func(row, col uint),
 ) (height uint) {
+	if !t.state.init || t.state.changedContent {
+		t.updateWidth()
+		t.state.init = true
+	}
 	defer func() {
 		if r := recover(); r != nil {
 			// Ignore panic, because to fast changes not important result.
