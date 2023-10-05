@@ -875,7 +875,9 @@ func TestSingleLine(t *testing.T) {
 // Benchmark/Render-0637-0100-4         	  477376	      2455 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/Width-0637-0100-4          	315199640	         3.960 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RWNoChange-0637-0100-4     	  485542	      2515 ns/op	       0 B/op	       0 allocs/op
-// Benchmark/RWChanged-0637-0100-4      	  115099	     10328 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWChanged-0637-0100-4      	  108307	     10703 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RSTNoChange-0637-0100-4    	  360322	      3101 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RSTChanged-0637-0100-4     	   76028	     14424 ns/op	    8192 B/op	       0 allocs/op
 func Benchmark(b *testing.B) {
 	var str []rune
 	for ti := range txts {
@@ -929,6 +931,28 @@ func Benchmark(b *testing.B) {
 			} else {
 				w = w - 5
 			}
+			sw = !sw
+			ta.Render(drawer, cursor)
+		}
+	})
+	b.Run("RSTNoChange-"+name, func(b *testing.B) {
+		for n := 0; n < b.N; n++ {
+			ta.SetText(str)
+			ta.Render(drawer, cursor)
+		}
+	})
+	b.Run("RSTChanged-"+name, func(b *testing.B) {
+		var text []rune
+		max := str
+		min := str[:len(str)-4]
+		var sw bool
+		for n := 0; n < b.N; n++ {
+			if sw {
+				text = min
+			} else {
+				text = max
+			}
+			ta.SetText(text)
 			sw = !sw
 			ta.Render(drawer, cursor)
 		}

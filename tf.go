@@ -70,6 +70,18 @@ type TextField struct {
 }
 
 func (t *TextField) SetText(text []rune) {
+	if len(text) == len(t.text) {
+		same := true
+		for i := range text {
+			if text[i] != t.text[i] {
+				same = false
+				break
+			}
+		}
+		if same {
+			return
+		}
+	}
 	// Is need update?
 	defer func() {
 		t.state.changedContent = true
