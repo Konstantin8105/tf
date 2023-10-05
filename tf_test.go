@@ -849,3 +849,70 @@ func TestSingleLine(t *testing.T) {
 		})
 	}
 }
+
+// goos: linux
+// goarch: amd64
+// pkg: github.com/Konstantin8105/tf
+// cpu: Intel(R) Xeon(R) CPU E3-1240 V2 @ 3.40GHz
+// Benchmark/Render-0637-0100-4         	  443305	      2528 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/Width-0637-0100-4          	  151008	      7783 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWNoChange-0637-0100-4     	  118446	     10170 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWChanged-0637-0100-4      	  116136	     10214 ns/op	       0 B/op	       0 allocs/op
+func Benchmark(b *testing.B) {
+	var str []rune
+	for ti := range txts {
+		if len(str) < len(txts[ti]) {
+			str = txts[ti]
+		}
+	}
+	var width uint
+	for wi := range widths {
+		if width < widths[wi] {
+			width = widths[wi]
+		}
+	}
+	drawer := func(row, col uint, r rune) {}
+	cursor := func(row, col uint) {}
+	name := fmt.Sprintf("%04d-%04d", len(str), width)
+	ta := TextField{Text: str}
+	ta.SetWidth(width)
+	ta.Render(drawer, cursor) // first step
+	b.Run("Render-"+name, func(b *testing.B) {
+		for n := 0; n < b.N; n++ {
+			ta.Render(drawer, cursor)
+		}
+	})
+	b.Run("Width-"+name, func(b *testing.B) {
+		w := width
+		var sw bool
+		for n := 0; n < b.N; n++ {
+			ta.SetWidth(w)
+			if sw {
+				w = w + 5
+			} else {
+				w = w - 5
+			}
+			sw = !sw
+		}
+	})
+	b.Run("RWNoChange-"+name, func(b *testing.B) {
+		for n := 0; n < b.N; n++ {
+			ta.SetWidth(width)
+			ta.Render(drawer, cursor)
+		}
+	})
+	b.Run("RWChanged-"+name, func(b *testing.B) {
+		w := width
+		var sw bool
+		for n := 0; n < b.N; n++ {
+			ta.SetWidth(w)
+			if sw {
+				w = w + 5
+			} else {
+				w = w - 5
+			}
+			sw = !sw
+			ta.Render(drawer, cursor)
+		}
+	})
+}
