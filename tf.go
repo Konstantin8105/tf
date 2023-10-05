@@ -59,7 +59,7 @@ type TextField struct {
 	cursor int        // cursor position in render slice
 	render []position // text in screen system coordinate
 
-	Text   []rune
+	text   []rune
 	Filter func(r rune) (insert bool)
 
 	state struct {
@@ -69,9 +69,21 @@ type TextField struct {
 	}
 }
 
+func (t *TextField) SetText(text []rune) {
+	// Is need update?
+	defer func() {
+		t.state.changedContent = true
+	}()
+	t.text = text
+}
+
+func (t TextField) GetText() []rune {
+	return t.text
+}
+
 func (t *TextField) cursorInRect() {
 	if len(t.render) == 0 {
-		panic(fmt.Errorf("not valid. Try run SetWidth: %#v %#v", t.render, t.Text))
+		panic(fmt.Errorf("not valid. Try run SetWidth: %#v %#v", t.render, t.text))
 	}
 	if 0 < len(t.render) && len(t.render) <= int(t.cursor) {
 		t.cursor = (len(t.render)) - 1
@@ -197,7 +209,7 @@ func (t *TextField) Insert(r rune) {
 		t.state.changedContent = true
 	}()
 	if t.cursor == 0 {
-		t.Text = append([]rune{r}, t.Text...)
+		t.text = append([]rune{r}, t.text...)
 		t.render = append([]position{{row: 0, col: 0, t: symbol}}, t.render...)
 		return
 	}
@@ -208,7 +220,7 @@ func (t *TextField) Insert(r rune) {
 	// 	}
 	// 	if t.render[t.cursor].t == endtext {
 	// 		fmt.Println("=====", addrow)
-	// 		t.Text = append(t.Text, r)
+	// 		t.text = append(t.text, r)
 	// 		var row, col uint
 	// 		row = t.render[t.cursor].row
 	// 		col = t.render[t.cursor].col
@@ -223,7 +235,7 @@ func (t *TextField) Insert(r rune) {
 	// 		t.render = append(t.render, position{row: row, col: col+1, t: endtext})
 	// 		return
 	// 	}
-	t.Text = append(t.Text[:t.cursor], append([]rune{r}, t.Text[t.cursor:]...)...)
+	t.text = append(t.text[:t.cursor], append([]rune{r}, t.text[t.cursor:]...)...)
 	t.render = append(t.render[:t.cursor], append([]position{
 		position{row: 0, col: 0, t: symT},
 	}, t.render[t.cursor:]...)...)
@@ -253,7 +265,7 @@ func (t *TextField) KeyBackspace() {
 	defer func() {
 		t.state.changedContent = true
 	}()
-	t.Text = append(t.Text[:t.cursor-1], t.Text[t.cursor:]...)
+	t.text = append(t.text[:t.cursor-1], t.text[t.cursor:]...)
 	t.cursor--
 }
 
@@ -273,7 +285,7 @@ func (t *TextField) KeyDel() {
 		// nothing to do
 		return
 	}
-	t.Text = append(t.Text[:t.cursor], t.Text[t.cursor+1:]...)
+	t.text = append(t.text[:t.cursor], t.text[t.cursor+1:]...)
 }
 
 func (t *TextField) Render(
@@ -298,7 +310,7 @@ func (t *TextField) Render(
 	for p := range t.render {
 		switch t.render[p].t {
 		case symbol:
-			drawer(t.render[p].row, t.render[p].col, t.Text[p])
+			drawer(t.render[p].row, t.render[p].col, t.text[p])
 		case space:
 			drawer(t.render[p].row, t.render[p].col, '•')
 		case newline:
@@ -357,7 +369,7 @@ func (t *TextField) updateWidth() {
 	}
 	// change width for cursor place
 	width -= 1
-	text := t.Text // locale variable for minimaze panic problems
+	text := t.text // locale variable for minimaze panic problems
 	// allocation
 	{
 		// last is endtext

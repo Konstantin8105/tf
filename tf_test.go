@@ -135,7 +135,7 @@ func check(t *testing.T, str string, wi int, name string) {
 	// prepare variables
 	var (
 		buf bytes.Buffer
-		ta  = TextField{Text: []rune(str)}
+		ta  = TextField{text: []rune(str)}
 	)
 	// compare
 	// defer func() {
@@ -389,7 +389,7 @@ func TestInsert(t *testing.T) {
 	var width uint = 20
 	for i := range tcs {
 		t.Run(fmt.Sprintf("%02d", i), func(t *testing.T) {
-			ta := TextField{Text: []rune(""), Filter: tcs[i].filter}
+			ta := TextField{text: []rune(""), Filter: tcs[i].filter}
 			ta.SetWidth(width)
 			for _, r := range []rune(tcs[i].input) {
 				ta.Insert(r)
@@ -576,7 +576,11 @@ func TestCursor(t *testing.T) {
 	for i := range tcs {
 		t.Run(tcs[i].name, func(t *testing.T) {
 			ta := TextField{}
-			ta.Text = []rune(tcs[i].text)
+			text := []rune(tcs[i].text)
+			ta.SetText(text)
+			if string(text) != string(ta.GetText()){
+				t.Errorf("not valid GetText")
+			}
 			ta.SetWidth(width)
 			if len(tcs[i].move) != len(tcs[i].expect) {
 				t.Errorf("not valid input data")
@@ -618,10 +622,10 @@ func TestSet(t *testing.T) {
 	ta := TextField{}
 	go func() {
 		for i := range largetext {
-			ta.Text = []rune(largetext[:i])
+			ta.SetText([]rune(largetext[:i]))
 		}
 		for i := len(largetext) - 1; 0 <= i; i-- {
-			ta.Text = []rune(largetext[:i])
+			ta.SetText([]rune(largetext[:i]))
 		}
 		wg.Done()
 	}()
@@ -825,7 +829,7 @@ func TestSingleLine(t *testing.T) {
 		t.Run(tcs[i].name, func(t *testing.T) {
 			ta := TextFieldLimit{}
 			ta.SetLinesLimit(1)
-			ta.Text = []rune(tcs[i].text)
+			ta.SetText([]rune(tcs[i].text))
 			ta.SetWidth(width)
 			if len(tcs[i].move) != len(tcs[i].expect) {
 				t.Errorf("not valid input data")
@@ -888,7 +892,7 @@ func Benchmark(b *testing.B) {
 	drawer := func(row, col uint, r rune) {}
 	cursor := func(row, col uint) {}
 	name := fmt.Sprintf("%04d-%04d", len(str), width)
-	ta := TextField{Text: str}
+	ta := TextField{text: str}
 	ta.SetWidth(width)
 	ta.Render(drawer, cursor) // first step
 	b.Run("Render-"+name, func(b *testing.B) {
