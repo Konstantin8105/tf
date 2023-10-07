@@ -878,6 +878,15 @@ func TestSingleLine(t *testing.T) {
 // Benchmark/RWChanged-0637-0100-4      	  108307	     10703 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RSTNoChange-0637-0100-4    	  360322	      3101 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RSTChanged-0637-0100-4     	   76028	     14424 ns/op	    8192 B/op	       0 allocs/op
+//
+// cpu: Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
+// Benchmark/Render-0637-0100-8         	  384886	      3087 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/Width-0637-0100-8          	221841694	         5.195 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWNoChange-0637-0100-8     	  381054	      3137 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RWChanged-0637-0100-8      	   84578	     14446 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RSTNoChange-0637-0100-8    	  308632	      3994 ns/op	       0 B/op	       0 allocs/op
+// Benchmark/RSTChanged-0637-0100-8     	   45547	     26733 ns/op	    8192 B/op	       0 allocs/op
+//
 func Benchmark(b *testing.B) {
 	var str []rune
 	for ti := range txts {
