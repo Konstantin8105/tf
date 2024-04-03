@@ -44,80 +44,6 @@ You will see:
 
 var widths = []uint{0, 1, 2, 3, 4, 10, 25, 50, 100}
 
-const errorRune = rune('#')
-
-type Buffer struct {
-	m [][]rune
-}
-
-func (b *Buffer) Drawer(row, col uint, r rune) {
-	for i := len(b.m); i <= int(row); i++ {
-		b.m = append(b.m, make([]rune, 0))
-	}
-	for i := len(b.m[row]); i <= int(col); i++ {
-		b.m[row] = append(b.m[row], errorRune)
-	}
-	b.m[row][col] = r
-}
-
-const defaultCursor = '█'
-
-func (b *Buffer) Cursor(row, col uint) {
-	b.Drawer(row, col, defaultCursor)
-}
-
-func (b Buffer) String() string {
-	var str string
-	var w int
-	for r := range b.m {
-		str += fmt.Sprintf("%09d|", r+1)
-		for c := range b.m[r] {
-			str += string(b.m[r][c])
-		}
-		if width := len(b.m[r]); w < width {
-			w = width
-		}
-		str += fmt.Sprintf("| width:%09d\n", len(b.m[r]))
-	}
-	str += fmt.Sprintf("rows  = %3d\n", len(b.m))
-	str += fmt.Sprintf("width = %3d\n", w)
-	return str
-}
-
-func (b Buffer) Text() string {
-	var str string
-	for r := range b.m {
-		for c := range b.m[r] {
-			str += string(b.m[r][c])
-		}
-		str += "\n"
-	}
-	return str
-}
-
-func (b Buffer) ErrorRune() bool {
-	for r := range b.m {
-		for c := range b.m[r] {
-			if b.m[r][c] == errorRune {
-				return true
-			}
-		}
-	}
-	return false
-}
-
-func (b Buffer) HasCursor() bool {
-	found := false
-	for r := range b.m {
-		for c := range b.m[r] {
-			if b.m[r][c] == defaultCursor {
-				found = true
-			}
-		}
-	}
-	return found
-}
-
 const testdata = "testdata"
 
 func Test(t *testing.T) {
@@ -578,7 +504,7 @@ func TestCursor(t *testing.T) {
 			ta := TextField{}
 			text := []rune(tcs[i].text)
 			ta.SetText(text)
-			if string(text) != string(ta.GetText()){
+			if string(text) != string(ta.GetText()) {
 				t.Errorf("not valid GetText")
 			}
 			ta.SetWidth(width)
@@ -886,7 +812,6 @@ func TestSingleLine(t *testing.T) {
 // Benchmark/RWChanged-0637-0100-8      	   84578	     14446 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RSTNoChange-0637-0100-8    	  308632	      3994 ns/op	       0 B/op	       0 allocs/op
 // Benchmark/RSTChanged-0637-0100-8     	   45547	     26733 ns/op	    8192 B/op	       0 allocs/op
-//
 func Benchmark(b *testing.B) {
 	var str []rune
 	for ti := range txts {
