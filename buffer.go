@@ -7,18 +7,16 @@ var (
 	errorRune     = rune('#')
 )
 
-type Buffer struct {
-	m [][]rune
-}
+type Buffer [][]rune
 
 func (b *Buffer) Drawer(row, col uint, r rune) {
-	for i := len(b.m); i <= int(row); i++ {
-		b.m = append(b.m, make([]rune, 0))
+	for i := len(*b); i <= int(row); i++ {
+		*b = append(*b, make([]rune, 0))
 	}
-	for i := len(b.m[row]); i <= int(col); i++ {
-		b.m[row] = append(b.m[row], errorRune)
+	for i := len((*b)[row]); i <= int(col); i++ {
+		(*b)[row] = append((*b)[row], errorRune)
 	}
-	b.m[row][col] = r
+	(*b)[row][col] = r
 }
 
 func (b *Buffer) Cursor(row, col uint) {
@@ -28,26 +26,26 @@ func (b *Buffer) Cursor(row, col uint) {
 func (b Buffer) String() string {
 	var str string
 	var w int
-	for r := range b.m {
+	for r := range b {
 		str += fmt.Sprintf("%09d|", r+1)
-		for c := range b.m[r] {
-			str += string(b.m[r][c])
+		for c := range b[r] {
+			str += string(b[r][c])
 		}
-		if width := len(b.m[r]); w < width {
+		if width := len(b[r]); w < width {
 			w = width
 		}
-		str += fmt.Sprintf("| width:%09d\n", len(b.m[r]))
+		str += fmt.Sprintf("| width:%09d\n", len(b[r]))
 	}
-	str += fmt.Sprintf("rows  = %3d\n", len(b.m))
+	str += fmt.Sprintf("rows  = %3d\n", len(b))
 	str += fmt.Sprintf("width = %3d\n", w)
 	return str
 }
 
 func (b Buffer) Text() string {
 	var str string
-	for r := range b.m {
-		for c := range b.m[r] {
-			str += string(b.m[r][c])
+	for r := range b {
+		for c := range b[r] {
+			str += string(b[r][c])
 		}
 		str += "\n"
 	}
@@ -55,9 +53,9 @@ func (b Buffer) Text() string {
 }
 
 func (b Buffer) ErrorRune() bool {
-	for r := range b.m {
-		for c := range b.m[r] {
-			if b.m[r][c] == errorRune {
+	for r := range b {
+		for c := range b[r] {
+			if b[r][c] == errorRune {
 				return true
 			}
 		}
@@ -67,9 +65,9 @@ func (b Buffer) ErrorRune() bool {
 
 func (b Buffer) HasCursor() bool {
 	found := false
-	for r := range b.m {
-		for c := range b.m[r] {
-			if b.m[r][c] == defaultCursor {
+	for r := range b {
+		for c := range b[r] {
+			if b[r][c] == defaultCursor {
 				found = true
 			}
 		}

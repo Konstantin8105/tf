@@ -323,7 +323,7 @@ func TestInsert(t *testing.T) {
 			}
 			var b Buffer
 			ta.Render(b.Drawer, nil)
-			actual := string(b.m[0])
+			actual := string(b[0])
 			expect := tcs[i].expect
 			if actual != expect {
 				t.Errorf("result is not same: `%s`, but not `%s`",
